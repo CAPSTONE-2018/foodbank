@@ -1,0 +1,294 @@
+%body
+  #wrapper
+    = form_tag ef_programs_url :method => :post do
+      .form-group
+        .row
+          .col-xs-2.pull-right.col-sm-1.rm
+            %label{:for => "agency_num"} Agency #
+            %input#agency_num.form-control{:disabled => "disabled", :type => "text"}/
+        .row
+          .text-center
+            %h3 Part V: Emergency Food Program (EFP) Information
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :DiscriminationComplaints, 'Have there been any discrimination complaints at the program in the past year?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :DiscriminationComplaints, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :DiscriminationComplaints, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :ComplaintsForwarded, 'If yes have the complaints been forwarded to the food bank?'
+          .col-xs-2.pull-left.col-sm-3.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :ComplaintsForwarded, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :ComplaintsForwarded, :type => "radio", :value => "No"
+            %label.radio-inline N/A
+            = text_field :ef_program, :ComplaintsForwarded, :type => "radio", :value => "NA"
+            %p
+        .row
+          %p.pull-left.col-sm-6
+            = label :ef_program, :NumOfCasesInInventory, 'Total cases of EFP/TANF product current in inventory:'
+            %small (Must be counted during visit)
+          .col-xs-1.pull-left
+            = text_field :ef_program, :NumOfCasesInInventory
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :OperateOtherProgram, 'Does the partner also operate another program?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :OperateOtherProgram, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :OperateOtherProgram, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :FoodSeperated, 'If yes, is the food seperated and tracked for the two programs?'
+          .col-xs-2.pull-left.col-sm-3.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :FoodSeperated, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :FoodSeperated, :type => "radio", :value => "No"
+            %label.radio-inline N/A
+            = text_field :ef_program, :FoodSeperated, :type => "radio", :value => "NA"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :EFPSiteManual,  'Does the program have the EFP Site Manual on-site?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :EFPSiteManual, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :EFPSiteManual , :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :OperationHoursPosted, 'Are visible signs posted appropriately announcing the days and hours of operation?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :OperationHoursPosted, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :OperationHoursPosted, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :JusticePosterVisible,  'Is the "And Justice For All" poster visible to the clients?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :JusticePosterVisible, :type => "radio"
+            %label.radio-inline No
+            = text_field :ef_program, :JusticePosterVisible, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :ReligiousOrganization, 'Is this a religious organization?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :ReligiousOrganization, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :ReligiousOrganization, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :BeneficiaryRightsVisible, 'Is the Written Notice of Beneficiary Rights Poster visible to the clients?'
+          .col-xs-2.pull-left.col-sm-3.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :BeneficiaryRightsVisible, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :BeneficiaryRightsVisible, :type => "radio", :value => "No"
+            %label.radio-inline N/A
+            = text_field :ef_program, :BeneficiaryRightsVisible, :type => "radio", :value => "NA"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :NonReligiousReferral, 'Are clients offerd a referral to a non-religious EFP feeding program?'
+          .col-xs-2.pull-left.col-sm-3.lm
+            %label.radio-inline Yes
+            =  text_field :ef_program, :NonReligiousReferral, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            =  text_field :ef_program, :NonReligiousReferral, :type => "radio", :value => "No"
+            %label.radio-inline N/A
+            = text_field :ef_program, :NonReligiousReferral, :type => "radio", :value => "NA"
+            %p
+        / PROGRAM PROCEDURES SECTION
+      .form-group    
+        .row
+          .header-underline
+            %h4{:style => "margin-top:5em"} Program Procedures
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :RequireClientDocuments, 'Does the program require any documents from clients?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :RequireClientDocuments, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :RequireClientDocuments, :type => "radio", :value => "No"
+            %p
+        .row
+          %p.pull-left.lm
+            %b
+            %small (Programs are prohibited from asking for social security cards, pay stubs and income data)
+        .row
+          .col-xs-2.pull-left.col-sm-6.lm
+            = label :ef_program, :DocumentsRequested, 'Describe the types of documentation requested.'
+          .col-xs-2.pull-left.col-sm-2.lm
+            = text_field :ef_program, :DocumentsRequested
+        .row
+          .col-xs-2.pull-left.col-sm-6.lm
+            = label :ef_program, :PurposeForRequestingDocumentation, 'Describe the purpose for requesting documentation.'
+          .col-xs-2.pull-left.col-sm-2.lm
+            = text_field :ef_program, :PurposeForRequestingDocumentation
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :ReceiveFoodOnceEvery30days, 'Does the program allow households to receive food at least once every 30 days?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :ReceiveFoodOnceEvery30days, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :ReceiveFoodOnceEvery30days, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :RequiredToObtainReferral, 'Are clients required to obtain referral from an outside agency in order to receive food?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :RequiredToObtainReferral, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :RequiredToObtainReferral, :type => "radio", :value => "No"
+            %p
+        / EFP GROCERY PROGRAMS SECTION
+        .row
+          .header-underline
+            %h4{:style => "margin-top:5em"} EFP Grocery Programs
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :OtherFoodsWithGovernemntCommodities, 'Does the pantry have other foods to distribute with government commodities?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :OtherFoodsWithGovernemntCommodities, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :OtherFoodsWithGovernemntCommodities, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :PostersVisible, 'Are the "And Just For All", "Income Eligibility","Notice to Program Participants", and "Prohibited Activities" posters visible to the clients?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :PostersVisible, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :PostersVisible, :type => "radio", :value => "No"
+            %p
+        / Signature Documents SECTION
+      .form-group     
+        .row
+          .header-underline
+          %h4{:style => "margin-top:5em"} Signature Documents
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :DHS_TANFSignaturesDocumentsUsed,  'Are DHS/TANF signature documents used?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :DHS_TANFSignaturesDocumentsUsed, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :DHS_TANFSignaturesDocumentsUsed, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :SignatureSheetsForCorrectYears, 'Are signature sheets for the correct year?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :SignatureSheetsForCorrectYears, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :SignatureSheetsForCorrectYears, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :FoodBankNameOnSheet, 'Is the food bank name on the signature sheet?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :FoodBankNameOnSheet, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            =text_field :ef_program, :FoodBankNameOnSheet, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :DateOnSignatureSheet,  'Is the date on the signature sheet?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :DateOnSignatureSheet, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :DateOnSignatureSheet, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :ReciptientSignTheirName, 'Does the recipient sign his/her name on the signature sheet?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :ReciptientSignTheirName, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :ReciptientSignTheirName, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :ClientAddressRecorded, "Is the client's address recorded on signature sheet?"
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :ClientAddressRecorded, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :ClientAddressRecorded, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :HouseholdSizeRecorded, 'Is the household size recorded on signature sheet?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :HouseholdSizeRecorded, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :HouseholdSizeRecorded, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :NumOfChildren18andUnderRecorded,  'Are the number of children that 18 years or younger recorded in the TANF box?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :NumOfChildren18andUnderRecorded, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :NumOfChildren18andUnderRecorded, :type => "radio", :value => "No"
+            %p
+        / Proxy Documents SECTION
+      .form-group     
+        .row
+          .header-underline-dotted
+            %h4{:style => "margin-top:5em"} Complete the following questions if proxy forms are used
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :CorrectYear, 'Are proxy forms for the correct year?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :CorrectYear, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :CorrectYear, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :OriginalSignature, 'Does the proxy form contain the original signature of recipient?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :OriginalSignature, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :OriginalSignature, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :SignInPresenceOfPantryPersonnel, 'Does the designated proxy sign the proxy form in the presence of pantry personnel?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :SignInPresenceOfPantryPersonnel, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :SignInPresenceOfPantryPersonnel, :type => "radio", :vale => "No"
+            %p
+        .row.pull-right.rm
+          = submit_tag 'Next'

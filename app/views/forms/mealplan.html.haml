@@ -1,0 +1,118 @@
+%body
+  !!! XML
+  #wrapper
+    = form_tag meal_programs_url :method => :post do
+      .form-group
+        .row
+          .text-center
+            %h3 Part I: Meal Program Information
+            %br
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :meal_program, :MonthlyServiceData, 'Monthly Service data reported?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :meal_program, :MonthlyServiceData, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :meal_program, :MonthlyServiceData, :type => "radio", :value => "No"
+              %p
+          .row
+            .col-xs-2.pull-left.col-sm-5.lm
+              = label :meal_program, :NumMealsServeredLastMonth, 'Number of meals served last month:'
+              = text_field :meal_program, :NumMealsServeredLastMonth
+          %br
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :meal_program, :SafeFoodHandlingCertification, 'Does Food Bank have the Safe Food Handling Certification on file?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :meal_program, :SafeFoodHandlingCertification, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :meal_program, :SafeFoodHandlingCertification, :type => "radio", :value => "No"
+              %p
+          .row
+            .pull-right.col-sm-12
+              = label :meal_program, :CertificationName, 'Name/Date'
+              = text_field :meal_program, :CertificationName
+          %br    
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :meal_program, :FeesDonations, 'Are fees/donations/memberships required of the clients for any service?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :meal_program, :FeesDonations, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :meal_program, :FeesDonations, :type => "radio", :value => "No"
+              %p
+          .row
+            .col-xs-2.pull-left.col-sm-6.rm
+              = label :meal_program, :FeesExplained, 'If yes, please explain'
+              = text_area :meal_program, :FeesExplained, :rows => "4", :style => "width:40em"
+          %br
+          .row
+            .col-xs-2.pull-left.col-sm-6.lm
+              =label :meal_program, :FundingSource, 'Funding Source'
+              = text_field :meal_program, :FundingSource
+          %br
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :meal_program, :SFHCertificationPosted, 'Is Safe Food Handling Certification posted in kitchen?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :meal_program, :SFHCertificationPosted, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :meal_program, :SFHCertificationPosted, :type => "radio", :value => "No"
+              %p
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :meal_program, :OperationHoursPosted, 'Are days and hours of operation posted on the outside of the facility & visible to clients?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :meal_program, :OperationHoursPosted, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :meal_program, :OperationHoursPosted, :type => "radio", :value => "No"
+              %p
+          .row
+            .col-xs-2.pull-left.col-sm-6.lm
+              = label :meal_program, :FoodAssistanceRequirements, 'What are the requirements for food assistance'
+              = text_field :meal_program, :FoodAssistanceRequirements
+          %br    
+          .row
+            .col-xs-2.pull-left.col-sm-2.lm
+              = label :meal_program, :FoodAssistanceRequirements, 'Average number of people served per month:'
+              = text_field :meal_program, :FoodAssistanceRequirements
+          %br
+          .row
+            %p.col-xs-2.pull-left.col-sm-6.lm
+              %b Group Homes / Transitional Living
+          %br
+          .row
+            .col-xs-2.pull-left.col-sm-2.rm
+              = label :meal_program, :GroupHomeCount, 'Number Of Residents', :size =>"2"
+              = text_field :meal_program, :GroupHomeCount
+            .col-xs-2.pull-left.col-sm-2.lm
+              = label :meal_program, :GroupHomeNumMeals, 'Number of meals served daily:'
+              = text_field :meal_program, :GroupHomeNumMeals
+            .col-xs-2.pull-left.col-sm-2.lm
+              = label :meal_program, :MealPrepParticipation, 'Who participates in meal preparation?'
+              = text_field :meal_program, :MealPrepParticipation
+          %br
+          .row
+            %p.col-xs-2.pull-left.col-sm-6.lm
+              %b School / Daycare Program
+          %br
+          .row
+            .col-xs-2.pull-left.col-sm-2.lm
+              = label :meal_program, :SchoolFee,  'Number of free lunches:'
+              = text_field :meal_program, :SchoolFee
+            .col-xs-2.pull-left.col-sm-3.lm
+              = label :meal_program, :NumSchoolReducedLunches,  'Number of reduced lunches:'
+              = text_field :meal_program, :NumSchoolReducedLunches
+            .col-xs-2.pull-left.col-sm-2.lm
+              = label :meal_program, :SchoolFee, 'Lunch fee $'
+              = text_field :meal_program, :SchoolFee
+            .col-xs-2.pull-left.col-sm-2.lm
+              = label :meal_program, :SchoolReducedFee, 'Reduced lunch fee $'
+              = text_field :meal_program, :SchoolReducedFee
+          .row.pull-right.rm
+            = submit_tag 'Next'

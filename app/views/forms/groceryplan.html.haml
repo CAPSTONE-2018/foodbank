@@ -1,0 +1,144 @@
+%body
+  #wrapper
+    = form_tag grocery_plans_url :method => :post do
+      .form-group
+        .row
+          .col-xs-2.pull-right.col-sm-1.rm
+            %label{:for => "agency_num"} Agency #
+            %input#agency_num.form-control{:disabled => "disabled", :type => "text"}/
+          .row
+            .text-center
+              %h3 Part II: Grocery Program Information
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              %b
+                'What type of distribution method is utilized?'
+              %br
+            .col-xs-2.pull-right.col-sm-12.rm
+              %label.checkbox-inline Choice Pantry
+              = text_field :grocery_plan, :ChoicePantry, :type => "checkbox", :value => "Yes"
+              %label.checkbox-inline Traditional
+              = text_field :grocery_plan, :Traditional, :type => "checkbox", :value => "Yes"
+              %label.checkbox-inline Combination
+              = text_field :grocery_plan, :Combination, :type => "checkbox", :value => "Yes"
+              %label.checkbox-inline Other
+              =text_field :grocery_plan, :Other,:type => "checkbox", :value => "Yes"
+          .row
+            %p.pull-left.col-sm-12
+              %small (If other please explain)
+            %br
+            .col-xs-2.pull-left.col-sm-6.lm
+              = text_field :grocery_plan, :OtherDistributonUtilized
+          .row
+            .col-xs-2.pull-left.col-sm-6.lm
+              = label :grocery_plan, :FequencyHouseholdCanRecieveFood, 'How often can a household receive food from the grocery program'
+            .col-xs-2.pull-left.col-sm-3.lm  
+              = text_field :grocery_plan, :FequencyHouseholdCanRecieveFood
+          %br
+          .row
+            .col-xs-2.pull-left.col-sm-6.lm
+              = label :grocery_plan, :AvgNumPeopleServered, 'Average number of people served per month'
+            .col-xs-2.pull-left.col-sm-2.lm  
+              = text_field :grocery_plan, :AvgNumPeopleServered
+          %br
+          .row
+            .col-xs-2.pull-left.col-sm-6.lm
+              = label :grocery_plan, :AvgNumHouseholdsServered, "Average number of households served per month"
+            .col-xs-2.pull-left.col-sm-2.lm  
+              = text_field :grocery_plan, :AvgNumHouseholdsServered
+          %br
+          .row
+            .col-xs-2.pull-left.col-sm-6.lm
+              = label :grocery_plan, :FoodPerHousehold, 'Estimated amount of food provided per household, in days or pounds'
+            .col-xs-2.pull-left.col-sm-2.lm  
+              = text_field :grocery_plan, :FoodPerHousehold
+          %br
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :grocery_plan, :GeoServiceArea, 'Does the grocery program have a designated geographic service area?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              =text_field :grocery_plan, :GeoServiceArea, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :grocery_plan, :GeoServiceArea, :type => "radio", :value => "No"
+              %p
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :grocery_plan, :FSClassAttended, 'Has a member of the grocery program attended food safety class?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :grocery_plan, :FSClassAttended, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :grocery_plan, :FSClassAttended, :type => "radio", :value => "No"
+              %p
+          .row
+            .col-xs-2.pull-left.col-sm-2.lm
+              = label :grocery_plan, :FSCDate, 'Date'
+              = text_field :grocery_plan, :FSCDate
+            .col-xs-2.pull-left.col-sm-2.lm
+              = label :grocery_plan, :FSCAttendeeName, 'Name'
+              = text_field :grocery_plan, :FSCAttendeeName
+          %br
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :grocery_plan, :FeesRequired, 'Are fees/donations/memberships required of the clients for any service?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :grocery_plan, :FeesRequired, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :grocery_plan, :FeesRequired, :type => "radio", :value => "No"
+              %p
+          .row
+            .col-xs-2.pull-left.col-sm-6.rm
+              = label :grocery_plan, :FeesExplained, 'If yes, Please Explain'
+              = text_area  :grocery_plan, :FeesExplained, :rows => "4", :style => "width:40em"
+        .row.yes-no-quest
+          .row
+            .col-xs-2.pull-left.col-sm-6.lm
+              = label :grocery_plan, :FundingSource, 'Funding Source'
+              = text_field :grocery_plan, :FundingSource
+          %br
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :grocery_plan, :DaysOfOperationVisible, 'Are days and hours of operation posted on the outside of the facility & visible to clients?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :grocery_plan, :DaysOfOperationVisible, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :grocery_plan, :DaysOfOperationVisible, :type => "radio", :value => "No"
+              %p
+          .row
+            .col-xs-2.pull-left.col-sm-6.lm
+              = label :grocery_plan, :FoodAssistanceRequirements, 'What are the requirements for food assistance'
+              = text_area :grocery_plan, :FoodAssistanceRequirements, :rows => "4", :style => "width:40em"
+        .row.yes-no-quest
+          %br
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :grocery_plan, :TrackClientParticipation, 'Does the grocery program track client participation?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :grocery_plan, :TrackClientParticipation, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :grocery_plan, :TrackClientParticipation, :type => "radio", :value => "No"
+              %p
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :grocery_plan, :Confidential, 'Is intake process done in a confidential manner?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :grocery_plan, :Confidential, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :grocery_plan, :Confidential, :type => "radio", :value => "No"
+              %p
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :grocery_plan, :Delivery, 'Does grocery program deliver food to clients?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :grocery_plan, :Delivery, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :grocery_plan, :Delivery, :type => "radio", :value => "No"
+              %p
+          .row.pull-right.rm
+            = submit_tag 'Next'

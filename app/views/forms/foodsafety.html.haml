@@ -1,0 +1,123 @@
+%body
+  !!! XML
+  #wrapper
+    = form_tag food_safeties_url :method => :post do
+      .form-group
+      .row
+        .col-xs-2.pull-right.col-sm-1.rm
+          %label{:for => "agency_num"} Agency #
+          %input#agency_num.form-control{:disabled => "disabled", :type => "text"}/
+      .row
+        .text-center
+          %h3 Part III: Food Safety, Storage and Inventory (ALL PROGRAMS)
+          .row.yes-no-quest
+            .col-xs-2.pull-left.col-sm-4.lm
+              = label :food_safety, :RequireAPermit, 'Does the Local Health Department require a permit?'            
+            .col-xs-2.pull-left.col-sm-3.lm
+              %label.radio-inline Yes
+              = text_field :food_safety, :RequireAPermit, :type =>"radio", :value => "Yes"
+              %label.radio-inline Not Required
+              = text_field :food_safety, :RequireAPermit, :type => "radio", :value => "Not Required"
+              %p
+          .row
+            .col-xs-2.pull-left.col-sm-4.lm
+              %p
+                %small (If yes, provide copy of permit and date of last inspection)
+          %br
+          .row
+            .col-xs-2.pull-left.col-sm-2.lm
+              = label :food_safety, :PermitScore,  'Score'
+              = text_field :food_safety, :PermitScore
+            .col-xs-2.pull-left.col-sm-2.lm
+              = label :food_safety, :PermitDate, 'Date'
+              = text_field :food_safety, :PermitDate
+          %br
+          .row.yes-no-quest
+            .col-xs-2.pull-left.col-sm-4.lm
+              = label :food_safety, :CleaningSchedulePosted, 'Is there a regular cleaning schedule established and posted?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :food_safety, :CleaningSchedulePosted, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :food_safety, :CleaningSchedulePosted, :type => "radio", :value => "No"
+              %p
+          %br
+          .row.yes-no-quest
+            .col-xs-2.pull-left.col-sm-4.lm
+              %b
+              = label :food_safety, :PestControlRoutine,  'Does the site have routine professional pest control?'
+              %small (Get Copy of Contract or Invoice)
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :food_safety, :PestControlRoutine, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :food_safety, :PestControlRoutine, :type => "radio", :value => "No"
+              %p
+          .row
+            .col-xs-2.pull-left.col-sm-3.lm
+              = label :food_safety, :PestControlCompany, 'With whom was the last inspection'
+              = text_field :food_safety, :PestControlCompany
+            .col-xs-2.pull-left.col-sm-2.lm
+              = label :food_safety, :PestControlLastVisit, 'Last inspection date'
+              = text_field :food_safety, :PestControlLastVisit
+          %br
+          .row
+            .pull-left.col-sm-3
+              = label :food_safety, :FoodStorageLocation, 'Is all food stored at this location?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :food_safety, :FoodStorageLocation, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :food_safety, :FoodStorageLocation, :type => "radio", :value => "No"
+          .row.yes-no-quest
+            %p.pull-left.col-sm-3
+              = label :food_safety, :AdditionalStorage, 'If no, where is the additional storage'
+            .col-xs-2.pull-left.col-sm-1.lm
+              = text_field :food_safety, :AdditionalStorage
+          %br
+          .row.yes-no-quest
+            %p.pull-left.col-sm-3
+              = label :food_safety, :FoodSixInchesOffFloor, 'Is all food stored 6 inches off the floor?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :food_safety, :FoodSixInchesOffFloor, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :food_safety, :FoodSixInchesOffFloor, :type => "radio", :value => "No"
+              %p
+          .row.yes-no-quest
+            %p.pull-left.col-sm-3
+              = label :food_safety, :FridgeTempBetween35and40F, 'Are refrigerator tempsbetween 35°  and 40°  F?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :food_safety, :FridgeTempBetween35and40F, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :food_safety, :FridgeTempBetween35and40F, :type => "radio", :value => "No"
+              %p
+          .row.yes-no-quest
+            %p.pull-left.col-sm-3
+              = label :food_safety, :FreezerTemp0orBelow, 'Are freezers 0°  F or below?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :food_safety, :FreezerTemp0orBelow, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :food_safety, :FreezerTemp0orBelow, :type => "radio", :value => "No"
+          .row.yes-no-quest
+            %p.pull-left.col-sm-6
+              = label :food_safety, :WorkingThermometers, 'Are there working thermometers in all storage areas and temps in proper range?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :food_safety, :WorkingThermometers, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :food_safety, :WorkingThermometers, :type => "radio", :value => "No"
+              %p
+          .row.yes-no-quest
+            %p.pull-left.col-sm-4
+              = label :food_safety, :TempLogsMaintainedAndPosted, 'Are temperature logs maintained and posted?'
+            .col-xs-2.pull-left.col-sm-2.lm
+              %label.radio-inline Yes
+              = text_field :food_safety, :TempLogsMaintainedAndPosted, :type => "radio", :value => "Yes"
+              %label.radio-inline No
+              = text_field :food_safety, :TempLogsMaintainedAndPosted, :type => "radio", :value => "No"
+              %p
+          .row.pull-right.rm
+            = submit_tag 'Next'

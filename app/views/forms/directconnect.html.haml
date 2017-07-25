@@ -1,0 +1,58 @@
+%body
+  !!! XML
+  #wrapper
+    = form_tag direct_connect_programs_url :method => :post do
+      .form-group
+        .row
+          .col-xs-2.pull-right.col-sm-1.rm
+            %label{:for => "agency_num"} Agency #
+            %input#agency_num.form-control{:disabled => "disabled", :type => "text"}/
+        .row
+          .text-center
+            %h3 Part IV: Direct Connect Program
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :direct_connect_program, :DirectConnectParticipate, 'Does the partner participate in DIRECT CONNECT?'
+            %small (pick up at a retail store)
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :direct_connect_program, :DirectConnectParticipate, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :direct_connect_program, :DirectConnectParticipate, :type => "radio", :value => "No"
+            %p
+        .row
+          .col-xs-2.pull-left.col-sm-6.lm
+            = label :direct_connect_program, :ColdFoodTransport, 'If yes, how are cold foods kept cold during transport?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            = text_field :direct_connect_program, :ColdFoodTransport
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            %b
+            = label :direct_connect_program, :PickupPaperwork,  'Do they have copies of their pick up paper work?'
+            %small (must keep on file for 7 years)
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :direct_connect_program, :PickupPaperworkPickupPaperwork, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :direct_connect_program, :PickupPaperwork, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :direct_connect_program, :SampleTemps, 'Are sample temperatures documented at the time of pick up and delivery?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :direct_connect_program, :SampleTemps, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :direct_connect_program, :SampleTemps, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :direct_connect_program, :TempControlledDevices, 'Do they have temperature controlled devices to be used during food transportation?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :direct_connect_program, :TempControlledDevices, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :direct_connect_program, :TempControlledDevices, :type => "radio", :value => "No"
+            %p
+        .row.pull-right.rm
+          = submit_tag 'Next'

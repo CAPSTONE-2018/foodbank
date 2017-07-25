@@ -1,0 +1,53 @@
+%body
+  #wrapper
+    = form_tag part_seven_eight_forms_url :method => :post do
+      .form-group
+        .row
+          .col-xs-2.pull-right.col-sm-1.rm
+            %label{:for => "agency_num"} Agency #
+            %input#agency_num.form-control{:disabled => "disabled", :type => "text"}/
+          / VIOLATIONS/CONCERNS SECTION
+        .row
+          .header-underline
+            %h4{:style => "margin-top:5em"} Part VII: Violations/Concerns
+        .row
+          .form-group.pull-left.lm.col-sm-8
+            = text_area :part_seven_eight_form, :Violations, :placeholder => "Violations/Concerns", :rows => "5", :style => "width:60em"
+        / COMMENTS/ACCOLADES SECTION
+        .row
+          .header-underline
+            %h4{:style => "margin-top:5em"} Part VIII: Comments/Accolades
+        .row
+          .form-group.pull-left.lm.col-sm-8
+            = text_area :part_seven_eight_form, :Comments, :placeholder => "Comments from agency staff concerning this visit, ordering, pick up, or other related issues. How can Northern Illinois Food Bank better serve this agency?", :rows => "5", :style => "width:60em"
+        .row.yes-no-quest
+          %p.pull-left.lm
+            %b
+            Capacity Building Needs
+            %small (What does the agency need to better serve their clients?)
+          .pull-left.lm-tab
+            %label.checkbox-inline.bold Volunteers
+            = text_field :part_seven_eight_form, :Volunteers, :type => "checkbox", :value => "Volunteers"
+            %label.checkbox-inline.bold Equiptment
+            = text_field :part_seven_eight_form, :Equiptment, :type => "checkbox", :value => "Equiptment"
+            %label.checkbox-inline.bold Funding
+            = text_field :part_seven_eight_form, :Funding, :type => "checkbox", :value => "Funding"
+            %label.checkbox-inline.bold Training
+            = text_field :part_seven_eight_form, :Training, :type => "checkbox", :value => "Training"
+            %p
+        .row
+          .col-xs-2.pull-left.col-sm-3.lm
+            = label :part_seven_eight_form, :DigitalSignNIFBRep, 'Northern Illinois Food Bank Representative *Digital Signature'
+            = text_field :part_seven_eight_form, :DigitalSignNIFBRep
+          .col-xs-2.pull-left.col-sm-3
+            = label :part_seven_eight_form, :DateOfDSNIFBRep,  'Date'
+            = text_field :part_seven_eight_form, :DateOfDSNIFBRep
+        .row
+          .col-xs-2.pull-left.col-sm-3.lm
+            = label :part_seven_eight_form, :DigitalSignAgencyRep, 'Agency *Digital Signature'
+            = text_field :part_seven_eight_form, :DigitalSignAgencyRep
+          .col-xs-2.pull-left.col-sm-3
+            = label :part_seven_eight_form, :DateOfDSAgencyRep, 'Date'
+            = text_field :part_seven_eight_form, :DataOfDSAgencyRep
+        .row.pull-right.rm
+          = submit_tag 'Submit'

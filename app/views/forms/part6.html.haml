@@ -1,0 +1,41 @@
+%body
+  #wrapper
+    = form_tag part_six_forms_url :method => :post do
+      .form-group
+        .row
+          .col-xs-2.pull-right.col-sm-1.rm
+            %label{:for => "agency_num"} Agency #
+            %input#agency_num.form-control{:disabled => "disabled", :type => "text"}/
+        .row
+          .text-center
+            %h3 Part VI: Forms
+        .row
+          %h4.header-underline The agency has completed and submitted the following documents at this time
+          .col-xs-2.pull-left.col-sm-4.lm
+            %label.checkbox Agency Membership Agreement & Liability Release
+          .col-xs-2.pull-left.col-sm-2.lm
+            = text_field :part_six_form, :Membership_Liability, :type => "checkbox", :value => " Yes"
+            %small (attached)
+        .row
+          .col-xs-2.pull-left.col-sm-4.lm  
+            %label.checkbox Copy of Illinois Food Sanitation License
+          .col-xs-2.pull-left.col-sm-2.lm
+            = text_field :part_six_form, :FoodSanitationLicense, :type => "checkbox", :value => "Yes"
+            %small (meal programs only, attached)
+        .row
+          .col-xs-2.pull-left.col-sm-4.lm  
+            %label.checkbox Copy of Health Department Permit and Inspection
+          .col-xs-2.pull-left.col-sm-2.lm  
+            = text_field :part_six_form, :HealthDepartmentPermit, :type => "checkbox", :value => "Yes"
+            %small (if required by local health department, attached)
+            %p
+        .row
+          .col-xs-2.pull-left.col-sm-4.lm 
+            %label.checkbox Pest Control
+          .col-xs-2.pull-left.col-sm-2.lm
+            = text_field :part_six_form, :PestControl, :type => "checkbox", :value => "Yes"
+            %small (attached)
+            %p
+            / Temporary Solution For Appearance
+        .row.pull-right.rm
+          = submit_tag 'Next'
