@@ -1,12 +1,5 @@
 # Northern Illinois Foodbank
 
-## Contact
-Lindsey Perry<br/>
-Area Manager<br/>
-email: lperry@northernilfoodbank.org<br/>
-phone: (815) 846-1041<br/>
-address: 3033 W. Jefferson St., Suite 210 Joliet IL 60435<br/>
-
 
 ## Background
 The Northern Illinois Food Bank is a non-profit organization that engages the community in a commitment to feed our hungry neighbors. Across 13 counties, food manufacturers, local groceries, corporations, foundations, and individuals come together to donate food and funds, and evaluate and repack food for distribution to our more than 800 network partners – the food pantries, soup kitchens, shelters and youth and senior feeding programs that serve more than 71,000 different people each week.
