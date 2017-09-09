@@ -1,5 +1,12 @@
 # Setting up Development Environment
-First, create a new blank workspace in [Cloud9](https://c9.io/).  I will send you an invitation to join my team, so that you are able to set-up an account without a credit card.  Be sure to use the Chrome browser when working with Rails in Cloud9.
+First, create a new **blank** workspace in [Cloud9](https://c9.io/).  I will send you an invitation to join my team, so that you are able to set-up an account without a credit card.  Be sure to use the Chrome browser when working with Rails in Cloud9.
+
+## Downgrade Ruby
+The workspace uses Ruby 2.4 but the app was developed in 2.3, so downgrade Ruby
+```
+rvm install 2.3.0
+rvm use 2.3.0
+```
 
 ## Install Rails in Cloud9
 At the command line type the following commands.  Note that these commands  may take a few minutes to run.
