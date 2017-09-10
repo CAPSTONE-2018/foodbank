@@ -13,12 +13,12 @@ At the command line type the following commands.  Note that these commands  may 
 
 ```
 gem install rails
-bundle install
 ```
 
 ## Set-up the application
 1. Clone this Git repository: `git clone https://github.com/Capstone-Fall-2017/foodbank.git`
 1. Move to the foodbank directory that was created when you cloned the repository:  `cd foodbank`
+1. Install the app's dependencies: `bundle install`
 3. Run database migrations:  `rake db:migrate`
 1. Launch the rails application: `rails server -p $PORT -b $IP`
 1. Click on the URL appears in the Cloud9 helper.
