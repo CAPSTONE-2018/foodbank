@@ -1,0 +1,8 @@
+# Rails and Databases
+
+You can configure your Rails application using many different types of databases.  By default Rails creates an SQLite database for development.  That database is named `development.sqlite3` and is located in the `db` folder of your application.  You can view the database by navigating to the `db` directory and typing `sqlite3 development.sqlite3`.  This [document](https://sqlite.org/cli.html) provides information on working with sqlite at the command line.  You can view the database, but don't modify it here.  In a Rails application, you do not create or modify the database directly.  Instead, you use migrations to make changes to the database.  [TutorialsPoint](https://www.tutorialspoint.com/ruby-on-rails/rails-database-setup.htm) provides a good explanation of setting up other databases and making changes using migrations.
+
+# Heroku
+Heroku is a hosting platform.  It's fairly simple to deploy Cloud9 apps to Heroku using Git.  However, in order to deploy an app, it needs to have a multi-user database.  SQLite is a single user database, so it won't work.  That's why the Heroku instructions include a step where you change the database from SQLite to Postgres.  Postgres is similar to MySQL and is access via a database server.  
+
+You don't need Heroku to develop in Cloud9 but in order to demonstrate the application to your client it must run somewhere on the Web.  In fine for now, if your app only runs in Cloud9 but sometime before the end of the first sprint, follow the instructions to move to Postgres.  It's important that you all do this at the same time, so that when you push and pull code, it is consistent.
