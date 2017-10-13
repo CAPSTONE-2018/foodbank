@@ -1,4 +1,5 @@
 Foodbank:: Application.routes.draw do 
+     root 'sessions#new'
     resources :forms, :fb_agencies, :meal_programs, :grocery_plans, :food_safeties, :direct_connect_programs,
     :ef_programs, :program_procedures, :signature_documents, :proxy_forms, :part_six_forms, :part_seven_eight_forms,
     :users
@@ -16,7 +17,8 @@ Foodbank:: Application.routes.draw do
     get '/forms/part7_8'
     
     
-   get 'signup'  => 'users#new' 
+   
+   get 'signup'  => 'users#new'
    resources :users
   
    get '/login' => 'sessions#new'
@@ -26,7 +28,6 @@ Foodbank:: Application.routes.draw do
    delete 'logout' => 'sessions#destroy'
 
     
-    
-    
-    root :to => redirect(' /forms')
+   
+
 end

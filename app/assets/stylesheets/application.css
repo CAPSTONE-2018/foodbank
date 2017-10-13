@@ -27,11 +27,16 @@ h1 {
   border-bottom: 1px solid DarkGreen;
 }
 #notice, #warning {
-  background: DarkGreen;
+  font-weight: bold;
+  color: Red;
   margin: 1em 0;
   padding: 4px;
 }
-
+#error_explanation{
+  
+  color: Red;
+  font-style: italic;
+}
 form label {
   display: block;
   line-height: 25px;

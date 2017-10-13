@@ -5,7 +5,8 @@ class SessionsController < ApplicationController
     session[:user_id] = @user.id
     redirect_to forms_path
   else
-    redirect_to 'login'
+    redirect_to '/login'
+    flash[:notice]="Unable to login, try again!"
   end 
   end
   def new
