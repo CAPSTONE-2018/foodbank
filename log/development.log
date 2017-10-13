@@ -3869,8 +3869,13 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 
+<<<<<<< HEAD
 Started GET "/login" for 98.206.233.97 at 2017-09-26 05:54:35 +0000
 Cannot render console from 98.206.233.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+Started GET "/" for 24.15.143.33 at 2017-09-21 16:37:11 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 
 PG::ConnectionBad (could not connect to server: Connection refused
 	Is the server running locally and accepting
@@ -3886,10 +3891,17 @@ PG::ConnectionBad (could not connect to server: Connection refused
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+=======
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
   activerecord (4.2.7.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
@@ -3926,6 +3938,7 @@ PG::ConnectionBad (could not connect to server: Connection refused
   rack (1.6.5) lib/rack/lock.rb:17:in `call'
   rack (1.6.5) lib/rack/content_length.rb:15:in `call'
   rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -3939,6 +3952,21 @@ PG::ConnectionBad (could not connect to server: Connection refused
 
 Started GET "/login" for 98.206.233.97 at 2017-09-26 05:54:45 +0000
 Cannot render console from 98.206.233.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.6ms)
+
+
+Started GET "/login" for 24.15.143.33 at 2017-09-21 16:37:26 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 
 PG::ConnectionBad (could not connect to server: Connection refused
 	Is the server running locally and accepting
@@ -3954,10 +3982,17 @@ PG::ConnectionBad (could not connect to server: Connection refused
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+=======
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
   activerecord (4.2.7.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
@@ -3994,6 +4029,7 @@ PG::ConnectionBad (could not connect to server: Connection refused
   rack (1.6.5) lib/rack/lock.rb:17:in `call'
   rack (1.6.5) lib/rack/content_length.rb:15:in `call'
   rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -4007,6 +4043,21 @@ PG::ConnectionBad (could not connect to server: Connection refused
 
 Started GET "/" for 98.206.233.97 at 2017-09-26 05:55:20 +0000
 Cannot render console from 98.206.233.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.2ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-21 16:41:37 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 
 PG::ConnectionBad (could not connect to server: Connection refused
 	Is the server running locally and accepting
@@ -4022,10 +4073,17 @@ PG::ConnectionBad (could not connect to server: Connection refused
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+=======
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
   activerecord (4.2.7.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
@@ -4062,6 +4120,7 @@ PG::ConnectionBad (could not connect to server: Connection refused
   rack (1.6.5) lib/rack/lock.rb:17:in `call'
   rack (1.6.5) lib/rack/content_length.rb:15:in `call'
   rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+<<<<<<< HEAD
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
@@ -4075,6 +4134,21 @@ PG::ConnectionBad (could not connect to server: Connection refused
 
 Started GET "/login" for 98.206.233.97 at 2017-09-26 05:55:26 +0000
 Cannot render console from 98.206.233.97! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.4/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.3ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-21 18:08:14 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 
 PG::ConnectionBad (could not connect to server: Connection refused
 	Is the server running locally and accepting
@@ -4135,6 +4209,7 @@ PG::ConnectionBad (could not connect to server: Connection refused
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
@@ -4166,6 +4241,41 @@ URI::InvalidURIError (bad URI(is not URI?):  /forms):
   activerecord (4.2.7.1) lib/active_record/query_cache.rb:36:in `call'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
   activerecord (4.2.7.1) lib/active_record/migration.rb:377:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.2ms)
+
+
+Started GET "/login" for 24.15.143.33 at 2017-09-21 18:08:18 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:370:in `call'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
   activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
   activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
@@ -4201,6 +4311,7 @@ URI::InvalidURIError (bad URI(is not URI?):  /forms):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.1ms)
@@ -4219,6 +4330,46 @@ Cannot render console from 38.69.30.120! Allowed networks: 127.0.0.1, ::1, 127.0
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.7ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 14:40:54 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::NoDatabaseError (FATAL:  database "foodbank_development" does not exist
+):
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -4246,6 +4397,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
@@ -4278,6 +4430,46 @@ Cannot render console from 38.69.30.120! Allowed networks: 127.0.0.1, ::1, 127.0
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.2ms)
+
+
+Started GET "/login" for 24.15.143.33 at 2017-09-22 14:45:27 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::NoDatabaseError (FATAL:  database "foodbank_development" does not exist
+):
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -4305,6 +4497,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
@@ -4321,6 +4514,20 @@ PG::ConnectionBad (could not connect to server: Connection refused
 ):
   activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.1ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 18:32:15 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::NoDatabaseError (FATAL:  database "foodbank_development" does not exist
+):
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
@@ -4374,6 +4581,7 @@ PG::ConnectionBad (could not connect to server: Connection refused
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
@@ -4389,6 +4597,20 @@ PG::ConnectionBad (could not connect to server: Connection refused
 ):
   activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.3ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 18:33:01 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::NoDatabaseError (FATAL:  database "foodbank_development" does not exist
+):
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
@@ -4442,6 +4664,7 @@ PG::ConnectionBad (could not connect to server: Connection refused
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
@@ -4473,6 +4696,38 @@ URI::InvalidURIError (bad URI(is not URI?):  /forms):
   activerecord (4.2.7.1) lib/active_record/query_cache.rb:36:in `call'
   activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
   activerecord (4.2.7.1) lib/active_record/migration.rb:377:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 18:38:18 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::NoDatabaseError (FATAL:  database "foodbank_development" does not exist
+):
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:370:in `call'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
   activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
   activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
@@ -4508,6 +4763,7 @@ URI::InvalidURIError (bad URI(is not URI?):  /forms):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (18.3ms)
@@ -49815,6 +50071,46 @@ Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.2ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 18:41:43 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::NoDatabaseError (FATAL:  database "foodbank_development" does not exist
+):
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -49842,6 +50138,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
@@ -49865,6 +50162,46 @@ Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.6ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 18:41:52 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::NoDatabaseError (FATAL:  database "foodbank_development" does not exist
+):
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -49892,6 +50229,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.8ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
@@ -49929,6 +50267,46 @@ Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)
+
+
+Started GET "/login" for 24.15.143.33 at 2017-09-22 18:41:57 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::NoDatabaseError (FATAL:  database "foodbank_development" does not exist
+):
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -49956,6 +50334,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (65.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
@@ -49997,6 +50376,93 @@ AbstractController::ActionNotFound (The action 'index' could not be found for Us
   actionpack (4.2.7.1) lib/action_controller/metal.rb:237:in `block in action'
   actionpack (4.2.7.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
   actionpack (4.2.7.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.2ms)
+  [1m[36m (24.7ms)[0m  [1mCREATE TABLE "Violations_Concerns" ("id" serial primary key, "AccoladesCommentsFromAgencyStaff" text, "AgencyNeeds_Volunteers" text, "AgencyNeeds_Equiptment" integer, "AgencyNeeds_Funding" integer, "AgencyNeeds_Training" integer, "DigitalSignNIFBRep" text, "DateOfDSNIFBRep" character varying, "DigitalSignAgencyRep" text, "DataOfDSAgencyRep" character varying, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (19.2ms)[0m  CREATE TABLE "direct_connect_programs" ("id" serial primary key, "DirectConnectParticipate" text, "ColdFoodTransport" text, "PickupPaperwork" text, "SampleTemps" text, "TempControlledDevices" text) 
+  [1m[36m (21.6ms)[0m  [1mCREATE TABLE "ef_programs" ("id" serial primary key, "DiscriminationComplaints" text, "ComplaintsForwarded" text, "NumOfCasesInInventory" integer, "OperateOtherProgram" text, "FoodSeperated" text, "EFPSiteManual" text, "OperationHoursPosted" text, "JusticePosterVisible" text, "ReligiousOrganization" text, "BeneficiaryRightsVisible" text, "NonReligiousReferral" text, "RequireClientDocuments" text, "DocumentsRequested" text, "PurposeForRequestingDocumentation" text, "ReceiveFoodOnceEvery30days" text, "RequiredToObtainReferral" text, "OtherFoodsWithGovernemntCommodities" text, "PostersVisible" text, "DHS_TANFSignaturesDocumentsUsed" character varying, "SignatureSheetsForCorrectYears" character varying, "FoodBankNameOnSheet" text, "DateOnSignatureSheet" text, "ReciptientSignTheirName" text, "ClientAddressRecorded" text, "HouseholdSizeRecorded" text, "NumOfChildren18andUnderRecorded" text, "CorrectYear" character varying, "OriginalSignature" text, "SignInPresenceOfPantryPersonnel" text) [0m
+  [1m[35m (17.2ms)[0m  CREATE TABLE "fb_agencies" ("id" serial primary key, "Agency_id" text, "AgencyCounty" character varying, "AgencyNumber" integer, "TodaysDate" character varying, "DofLastMonitor" character varying, "AgencyName" text, "ParentAgency" text, "PAgencyNum" text, "SiteAddress" text, "SiteNumber" bigint, "ContactName" text, "ContactNum" bigint, "Director" text, "DirectorNum" bigint, "AdditionalContact" text, "AdditionalNum" bigint, "PrimaryEmail" text, "DateMostRecentTraining" date, "TaxExemptOnFile" text, "IRSVerification" text, "DateOfVerification" character varying, "EEP" integer, "DateOfContract" character varying, "SoupKitchen" text, "GroupHome" text, "Shelter" text, "Daycare" text, "YouthProgram" text, "FoodPantry" text, "Seasonal" text, "MobilePantry" text, "Backpack" text, "PersonInterviewed" text, "DaysOfOperation" text, "SingleAudit" text, "HandicapAccessible" text) 
+  [1m[36m (17.9ms)[0m  [1mCREATE TABLE "food_safeties" ("id" serial primary key, "RequireAPermit" text, "PermitDate" text, "PermitScore" text, "CleaningSchedulePosted" text, "PestControlRoutine" text, "PestControlCompany" text, "PestControlLastVisit" timestamp, "FoodStorageLocation" text, "AdditionalStorage" text, "FoodSixInchesOffFloor" text, "FridgeTempBetween35and40F" text, "FridgeTemp" text, "FreezerTemp0orBelow" text, "FreezerTemp" text, "WorkingThermometers" text, "TempLogsMaintainedAndPosted" text) [0m
+  [1m[35m (14.5ms)[0m  CREATE TABLE "forms" ("id" serial primary key, "AgencyCounty" text, "agency_num" text, "agency_name" text) 
+  [1m[36m (14.8ms)[0m  [1mCREATE TABLE "grocery_plans" ("id" serial primary key, "ChoicePantry" text, "Traditional" text, "Combination" text, "Other" text, "OtherDistributonUtilized" text, "FequencyHouseholdCanRecieveFood" text, "AvgNumPeopleServered" text, "AvgNumHouseholdsServered" text, "FoodPerHousehold" text, "GeoServiceArea" text, "FSClassAttended" text, "FSCAttendeeName" text, "FSCDate" text, "FeesRequired" text, "FeesExplained" integer, "FundingSource" integer, "DaysOfOperationVisible" integer, "FoodAssistanceRequirements" text, "TrackClientParticipation" integer, "Confidential" integer, "Delivery" integer) [0m
+  [1m[35m (14.2ms)[0m  CREATE TABLE "meal_programs" ("id" serial primary key, "MonthlyServiceData" text, "NumMealsServeredLastMonth" integer, "SafeFoodHandlingCertification" text, "CertificationName" text, "FeesDonations" text, "FeesExplained" text, "FundingSource" text, "SFHCertificationPosted" text, "OperationHoursPosted" text, "FoodAssistanceRequirements" text, "NumPeopleServedMonthly" integer, "GroupHomeCount" integer, "GroupHomeNumMeals" integer, "MealPrepParticipation" text, "SchoolReducedFee" integer, "SchoolFee" integer, "NumSchoolReducedLunches" integer, "NumFreeLunch" integer) 
+  [1m[36m (13.2ms)[0m  [1mCREATE TABLE "part7_8_forms" ("id" serial primary key, "Violations" text, "AccoladesComments" text, "Volunteers" text, "Equiptment" text, "Funding" text, "Training" text, "DigitalSignNIFBRep" text, "DateOfDSNIFBRep" timestamp, "DigitalSignAgencyRep" text, "DateOfDSAgencyRep" timestamp) [0m
+  [1m[35m (18.0ms)[0m  CREATE TABLE "part_seven_eight_forms" ("id" serial primary key, "Violations" text, "AccoladesComments" text, "Volunteers" text, "Equiptment" text, "Funding" text, "Training" text, "DigitalSignNIFBRep" text, "DateOfDSNIFBRep" character varying, "DigitalSignAgencyRep" text, "DateOfDSAgencyRep" character varying) 
+  [1m[36m (15.2ms)[0m  [1mCREATE TABLE "part_six_forms" ("id" serial primary key, "Membership_Liability" text, "FoodSanitationLicense" text, "HealthDepartmentPermit" text, "PestControl" text) [0m
+  [1m[35m (16.6ms)[0m  CREATE TABLE "program_procedures" ("id" serial primary key, "RequireClientDocuments" text, "DocumentsRequested" text, "PurposeForRequestingDocumentation" text, "ReceiveFoodOnceEvery30days" text, "RequiredToObtainReferral" text, "OtherFoodsWithGovernemntCommodities" text, "PostersVisible" text) 
+  [1m[36m (19.9ms)[0m  [1mCREATE TABLE "proxy_forms" ("id" serial primary key, "CorrectYear" character varying, "OriginalSignature" text, "SignInPresenceOfPantryPersonnel" text) [0m
+  [1m[35m (18.0ms)[0m  CREATE TABLE "signature_documents" ("id" serial primary key, "DHS_TANFSignaturesDocumentsUsed" character varying, "SignatureSheetsForCorrectYears" character varying, "FoodBankNameOnSheet" text, "DateOnSignatureSheet" text, "ReciptientSignTheirName" text, "ClientAddressRecorded" text, "HouseholdSizeRecorded" text, "NumOfChildren18andUnderRecorded" text) 
+  [1m[36m (17.5ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (9.1ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (6.9ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (3.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170226233641')[0m
+  [1m[36m (7.8ms)[0m  [1mDROP TABLE "Violations_Concerns" CASCADE[0m
+  [1m[35m (20.6ms)[0m  CREATE TABLE "Violations_Concerns" ("id" serial primary key, "AccoladesCommentsFromAgencyStaff" text, "AgencyNeeds_Volunteers" text, "AgencyNeeds_Equiptment" integer, "AgencyNeeds_Funding" integer, "AgencyNeeds_Training" integer, "DigitalSignNIFBRep" text, "DateOfDSNIFBRep" character varying, "DigitalSignAgencyRep" text, "DataOfDSAgencyRep" character varying, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (6.1ms)[0m  [1mDROP TABLE "direct_connect_programs" CASCADE[0m
+  [1m[35m (16.3ms)[0m  CREATE TABLE "direct_connect_programs" ("id" serial primary key, "DirectConnectParticipate" text, "ColdFoodTransport" text, "PickupPaperwork" text, "SampleTemps" text, "TempControlledDevices" text) 
+  [1m[36m (6.0ms)[0m  [1mDROP TABLE "ef_programs" CASCADE[0m
+  [1m[35m (22.6ms)[0m  CREATE TABLE "ef_programs" ("id" serial primary key, "DiscriminationComplaints" text, "ComplaintsForwarded" text, "NumOfCasesInInventory" integer, "OperateOtherProgram" text, "FoodSeperated" text, "EFPSiteManual" text, "OperationHoursPosted" text, "JusticePosterVisible" text, "ReligiousOrganization" text, "BeneficiaryRightsVisible" text, "NonReligiousReferral" text, "RequireClientDocuments" text, "DocumentsRequested" text, "PurposeForRequestingDocumentation" text, "ReceiveFoodOnceEvery30days" text, "RequiredToObtainReferral" text, "OtherFoodsWithGovernemntCommodities" text, "PostersVisible" text, "DHS_TANFSignaturesDocumentsUsed" character varying, "SignatureSheetsForCorrectYears" character varying, "FoodBankNameOnSheet" text, "DateOnSignatureSheet" text, "ReciptientSignTheirName" text, "ClientAddressRecorded" text, "HouseholdSizeRecorded" text, "NumOfChildren18andUnderRecorded" text, "CorrectYear" character varying, "OriginalSignature" text, "SignInPresenceOfPantryPersonnel" text) 
+  [1m[36m (7.1ms)[0m  [1mDROP TABLE "fb_agencies" CASCADE[0m
+  [1m[35m (18.9ms)[0m  CREATE TABLE "fb_agencies" ("id" serial primary key, "Agency_id" text, "AgencyCounty" character varying, "AgencyNumber" integer, "TodaysDate" character varying, "DofLastMonitor" character varying, "AgencyName" text, "ParentAgency" text, "PAgencyNum" text, "SiteAddress" text, "SiteNumber" bigint, "ContactName" text, "ContactNum" bigint, "Director" text, "DirectorNum" bigint, "AdditionalContact" text, "AdditionalNum" bigint, "PrimaryEmail" text, "DateMostRecentTraining" date, "TaxExemptOnFile" text, "IRSVerification" text, "DateOfVerification" character varying, "EEP" integer, "DateOfContract" character varying, "SoupKitchen" text, "GroupHome" text, "Shelter" text, "Daycare" text, "YouthProgram" text, "FoodPantry" text, "Seasonal" text, "MobilePantry" text, "Backpack" text, "PersonInterviewed" text, "DaysOfOperation" text, "SingleAudit" text, "HandicapAccessible" text) 
+  [1m[36m (7.0ms)[0m  [1mDROP TABLE "food_safeties" CASCADE[0m
+  [1m[35m (15.0ms)[0m  CREATE TABLE "food_safeties" ("id" serial primary key, "RequireAPermit" text, "PermitDate" text, "PermitScore" text, "CleaningSchedulePosted" text, "PestControlRoutine" text, "PestControlCompany" text, "PestControlLastVisit" timestamp, "FoodStorageLocation" text, "AdditionalStorage" text, "FoodSixInchesOffFloor" text, "FridgeTempBetween35and40F" text, "FridgeTemp" text, "FreezerTemp0orBelow" text, "FreezerTemp" text, "WorkingThermometers" text, "TempLogsMaintainedAndPosted" text) 
+  [1m[36m (5.9ms)[0m  [1mDROP TABLE "forms" CASCADE[0m
+  [1m[35m (15.7ms)[0m  CREATE TABLE "forms" ("id" serial primary key, "AgencyCounty" text, "agency_num" text, "agency_name" text) 
+  [1m[36m (6.5ms)[0m  [1mDROP TABLE "grocery_plans" CASCADE[0m
+  [1m[35m (17.2ms)[0m  CREATE TABLE "grocery_plans" ("id" serial primary key, "ChoicePantry" text, "Traditional" text, "Combination" text, "Other" text, "OtherDistributonUtilized" text, "FequencyHouseholdCanRecieveFood" text, "AvgNumPeopleServered" text, "AvgNumHouseholdsServered" text, "FoodPerHousehold" text, "GeoServiceArea" text, "FSClassAttended" text, "FSCAttendeeName" text, "FSCDate" text, "FeesRequired" text, "FeesExplained" integer, "FundingSource" integer, "DaysOfOperationVisible" integer, "FoodAssistanceRequirements" text, "TrackClientParticipation" integer, "Confidential" integer, "Delivery" integer) 
+  [1m[36m (5.2ms)[0m  [1mDROP TABLE "meal_programs" CASCADE[0m
+  [1m[35m (14.9ms)[0m  CREATE TABLE "meal_programs" ("id" serial primary key, "MonthlyServiceData" text, "NumMealsServeredLastMonth" integer, "SafeFoodHandlingCertification" text, "CertificationName" text, "FeesDonations" text, "FeesExplained" text, "FundingSource" text, "SFHCertificationPosted" text, "OperationHoursPosted" text, "FoodAssistanceRequirements" text, "NumPeopleServedMonthly" integer, "GroupHomeCount" integer, "GroupHomeNumMeals" integer, "MealPrepParticipation" text, "SchoolReducedFee" integer, "SchoolFee" integer, "NumSchoolReducedLunches" integer, "NumFreeLunch" integer) 
+  [1m[36m (3.5ms)[0m  [1mDROP TABLE "part7_8_forms" CASCADE[0m
+  [1m[35m (14.8ms)[0m  CREATE TABLE "part7_8_forms" ("id" serial primary key, "Violations" text, "AccoladesComments" text, "Volunteers" text, "Equiptment" text, "Funding" text, "Training" text, "DigitalSignNIFBRep" text, "DateOfDSNIFBRep" timestamp, "DigitalSignAgencyRep" text, "DateOfDSAgencyRep" timestamp) 
+  [1m[36m (5.9ms)[0m  [1mDROP TABLE "part_seven_eight_forms" CASCADE[0m
+  [1m[35m (12.7ms)[0m  CREATE TABLE "part_seven_eight_forms" ("id" serial primary key, "Violations" text, "AccoladesComments" text, "Volunteers" text, "Equiptment" text, "Funding" text, "Training" text, "DigitalSignNIFBRep" text, "DateOfDSNIFBRep" character varying, "DigitalSignAgencyRep" text, "DateOfDSAgencyRep" character varying) 
+  [1m[36m (6.6ms)[0m  [1mDROP TABLE "part_six_forms" CASCADE[0m
+  [1m[35m (25.6ms)[0m  CREATE TABLE "part_six_forms" ("id" serial primary key, "Membership_Liability" text, "FoodSanitationLicense" text, "HealthDepartmentPermit" text, "PestControl" text) 
+  [1m[36m (7.0ms)[0m  [1mDROP TABLE "program_procedures" CASCADE[0m
+  [1m[35m (13.2ms)[0m  CREATE TABLE "program_procedures" ("id" serial primary key, "RequireClientDocuments" text, "DocumentsRequested" text, "PurposeForRequestingDocumentation" text, "ReceiveFoodOnceEvery30days" text, "RequiredToObtainReferral" text, "OtherFoodsWithGovernemntCommodities" text, "PostersVisible" text) 
+  [1m[36m (4.2ms)[0m  [1mDROP TABLE "proxy_forms" CASCADE[0m
+  [1m[35m (13.1ms)[0m  CREATE TABLE "proxy_forms" ("id" serial primary key, "CorrectYear" character varying, "OriginalSignature" text, "SignInPresenceOfPantryPersonnel" text) 
+  [1m[36m (6.0ms)[0m  [1mDROP TABLE "signature_documents" CASCADE[0m
+  [1m[35m (12.7ms)[0m  CREATE TABLE "signature_documents" ("id" serial primary key, "DHS_TANFSignaturesDocumentsUsed" character varying, "SignatureSheetsForCorrectYears" character varying, "FoodBankNameOnSheet" text, "DateOnSignatureSheet" text, "ReciptientSignTheirName" text, "ClientAddressRecorded" text, "HouseholdSizeRecorded" text, "NumOfChildren18andUnderRecorded" text) 
+  [1m[36m (6.7ms)[0m  [1mDROP TABLE "users" CASCADE[0m
+  [1m[35m (20.1ms)[0m  CREATE TABLE "users" ("id" serial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (22.5ms)[0m  CREATE TABLE "Violations_Concerns" ("id" serial primary key, "AccoladesCommentsFromAgencyStaff" text, "AgencyNeeds_Volunteers" text, "AgencyNeeds_Equiptment" integer, "AgencyNeeds_Funding" integer, "AgencyNeeds_Training" integer, "DigitalSignNIFBRep" text, "DateOfDSNIFBRep" character varying, "DigitalSignAgencyRep" text, "DataOfDSAgencyRep" character varying, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (16.6ms)[0m  [1mCREATE TABLE "direct_connect_programs" ("id" serial primary key, "DirectConnectParticipate" text, "ColdFoodTransport" text, "PickupPaperwork" text, "SampleTemps" text, "TempControlledDevices" text) [0m
+  [1m[35m (23.2ms)[0m  CREATE TABLE "ef_programs" ("id" serial primary key, "DiscriminationComplaints" text, "ComplaintsForwarded" text, "NumOfCasesInInventory" integer, "OperateOtherProgram" text, "FoodSeperated" text, "EFPSiteManual" text, "OperationHoursPosted" text, "JusticePosterVisible" text, "ReligiousOrganization" text, "BeneficiaryRightsVisible" text, "NonReligiousReferral" text, "RequireClientDocuments" text, "DocumentsRequested" text, "PurposeForRequestingDocumentation" text, "ReceiveFoodOnceEvery30days" text, "RequiredToObtainReferral" text, "OtherFoodsWithGovernemntCommodities" text, "PostersVisible" text, "DHS_TANFSignaturesDocumentsUsed" character varying, "SignatureSheetsForCorrectYears" character varying, "FoodBankNameOnSheet" text, "DateOnSignatureSheet" text, "ReciptientSignTheirName" text, "ClientAddressRecorded" text, "HouseholdSizeRecorded" text, "NumOfChildren18andUnderRecorded" text, "CorrectYear" character varying, "OriginalSignature" text, "SignInPresenceOfPantryPersonnel" text) 
+  [1m[36m (14.6ms)[0m  [1mCREATE TABLE "fb_agencies" ("id" serial primary key, "Agency_id" text, "AgencyCounty" character varying, "AgencyNumber" integer, "TodaysDate" character varying, "DofLastMonitor" character varying, "AgencyName" text, "ParentAgency" text, "PAgencyNum" text, "SiteAddress" text, "SiteNumber" bigint, "ContactName" text, "ContactNum" bigint, "Director" text, "DirectorNum" bigint, "AdditionalContact" text, "AdditionalNum" bigint, "PrimaryEmail" text, "DateMostRecentTraining" date, "TaxExemptOnFile" text, "IRSVerification" text, "DateOfVerification" character varying, "EEP" integer, "DateOfContract" character varying, "SoupKitchen" text, "GroupHome" text, "Shelter" text, "Daycare" text, "YouthProgram" text, "FoodPantry" text, "Seasonal" text, "MobilePantry" text, "Backpack" text, "PersonInterviewed" text, "DaysOfOperation" text, "SingleAudit" text, "HandicapAccessible" text) [0m
+  [1m[35m (14.4ms)[0m  CREATE TABLE "food_safeties" ("id" serial primary key, "RequireAPermit" text, "PermitDate" text, "PermitScore" text, "CleaningSchedulePosted" text, "PestControlRoutine" text, "PestControlCompany" text, "PestControlLastVisit" timestamp, "FoodStorageLocation" text, "AdditionalStorage" text, "FoodSixInchesOffFloor" text, "FridgeTempBetween35and40F" text, "FridgeTemp" text, "FreezerTemp0orBelow" text, "FreezerTemp" text, "WorkingThermometers" text, "TempLogsMaintainedAndPosted" text) 
+  [1m[36m (13.5ms)[0m  [1mCREATE TABLE "forms" ("id" serial primary key, "AgencyCounty" text, "agency_num" text, "agency_name" text) [0m
+  [1m[35m (14.6ms)[0m  CREATE TABLE "grocery_plans" ("id" serial primary key, "ChoicePantry" text, "Traditional" text, "Combination" text, "Other" text, "OtherDistributonUtilized" text, "FequencyHouseholdCanRecieveFood" text, "AvgNumPeopleServered" text, "AvgNumHouseholdsServered" text, "FoodPerHousehold" text, "GeoServiceArea" text, "FSClassAttended" text, "FSCAttendeeName" text, "FSCDate" text, "FeesRequired" text, "FeesExplained" integer, "FundingSource" integer, "DaysOfOperationVisible" integer, "FoodAssistanceRequirements" text, "TrackClientParticipation" integer, "Confidential" integer, "Delivery" integer) 
+  [1m[36m (14.9ms)[0m  [1mCREATE TABLE "meal_programs" ("id" serial primary key, "MonthlyServiceData" text, "NumMealsServeredLastMonth" integer, "SafeFoodHandlingCertification" text, "CertificationName" text, "FeesDonations" text, "FeesExplained" text, "FundingSource" text, "SFHCertificationPosted" text, "OperationHoursPosted" text, "FoodAssistanceRequirements" text, "NumPeopleServedMonthly" integer, "GroupHomeCount" integer, "GroupHomeNumMeals" integer, "MealPrepParticipation" text, "SchoolReducedFee" integer, "SchoolFee" integer, "NumSchoolReducedLunches" integer, "NumFreeLunch" integer) [0m
+  [1m[35m (21.6ms)[0m  CREATE TABLE "part7_8_forms" ("id" serial primary key, "Violations" text, "AccoladesComments" text, "Volunteers" text, "Equiptment" text, "Funding" text, "Training" text, "DigitalSignNIFBRep" text, "DateOfDSNIFBRep" timestamp, "DigitalSignAgencyRep" text, "DateOfDSAgencyRep" timestamp) 
+  [1m[36m (14.4ms)[0m  [1mCREATE TABLE "part_seven_eight_forms" ("id" serial primary key, "Violations" text, "AccoladesComments" text, "Volunteers" text, "Equiptment" text, "Funding" text, "Training" text, "DigitalSignNIFBRep" text, "DateOfDSNIFBRep" character varying, "DigitalSignAgencyRep" text, "DateOfDSAgencyRep" character varying) [0m
+  [1m[35m (19.1ms)[0m  CREATE TABLE "part_six_forms" ("id" serial primary key, "Membership_Liability" text, "FoodSanitationLicense" text, "HealthDepartmentPermit" text, "PestControl" text) 
+  [1m[36m (14.8ms)[0m  [1mCREATE TABLE "program_procedures" ("id" serial primary key, "RequireClientDocuments" text, "DocumentsRequested" text, "PurposeForRequestingDocumentation" text, "ReceiveFoodOnceEvery30days" text, "RequiredToObtainReferral" text, "OtherFoodsWithGovernemntCommodities" text, "PostersVisible" text) [0m
+  [1m[35m (13.3ms)[0m  CREATE TABLE "proxy_forms" ("id" serial primary key, "CorrectYear" character varying, "OriginalSignature" text, "SignInPresenceOfPantryPersonnel" text) 
+  [1m[36m (21.2ms)[0m  [1mCREATE TABLE "signature_documents" ("id" serial primary key, "DHS_TANFSignaturesDocumentsUsed" character varying, "SignatureSheetsForCorrectYears" character varying, "FoodBankNameOnSheet" text, "DateOnSignatureSheet" text, "ReciptientSignTheirName" text, "ClientAddressRecorded" text, "HouseholdSizeRecorded" text, "NumOfChildren18andUnderRecorded" text) [0m
+  [1m[35m (14.7ms)[0m  CREATE TABLE "users" ("id" serial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (11.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (10.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170226233641')
+
+
+Started GET "/" for 98.144.108.87 at 2017-09-22 19:06:19 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+URI::InvalidURIError (bad URI(is not URI?):  /forms):
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:67:in `split'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:73:in `parse'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/common.rb:227:in `parse'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/redirection.rb:26:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/redirection.rb:21:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
   actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:30:in `each'
   actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:30:in `serve'
@@ -50047,6 +50513,7 @@ AbstractController::ActionNotFound (The action 'index' could not be found for Us
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.9ms)
 
 
@@ -50154,6 +50621,47 @@ Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.6ms)
+
+
+Started GET "/" for 98.144.108.87 at 2017-09-22 19:06:24 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+URI::InvalidURIError (bad URI(is not URI?):  /forms):
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:67:in `split'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:73:in `parse'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/common.rb:227:in `parse'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/redirection.rb:26:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/redirection.rb:21:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -50181,6 +50689,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
@@ -50196,6 +50705,22 @@ Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/form.css" for 98.144.108.87 at 2017-10-13 12:54:44 +0000
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.3ms)
+
+
+Started GET "/login" for 98.144.108.87 at 2017-09-22 19:06:24 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 404ms (Views: 403.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form.css" for 98.144.108.87 at 2017-09-22 19:06:25 +0000
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
@@ -50227,6 +50752,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
@@ -50275,6 +50801,68 @@ Cannot render console from 67.167.25.193! Allowed networks: 127.0.0.1, ::1, 127.
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (25.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (108.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 98.144.108.87 at 2017-09-22 19:06:25 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 98.144.108.87 at 2017-09-22 19:06:25 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 98.144.108.87 at 2017-09-22 19:06:25 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7f3210f4df2a89c46d74c506a593ac9053a9e9e56f9609b6c0441f7424dc6fe2.css?body=1" for 98.144.108.87 at 2017-09-22 19:06:25 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 98.144.108.87 at 2017-09-22 19:06:25 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 19:14:10 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+URI::InvalidURIError (bad URI(is not URI?):  /forms):
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:67:in `split'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:73:in `parse'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/common.rb:227:in `parse'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/redirection.rb:26:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/redirection.rb:21:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -50302,6 +50890,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (17.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.8ms)
@@ -50334,6 +50923,25 @@ Started GET "/form.css" for 67.167.25.193 at 2017-10-13 14:58:54 +0000
 Cannot render console from 67.167.25.193! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.8ms)
+
+
+Started GET "/login/" for 24.15.143.33 at 2017-09-22 19:14:20 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login/form.css" for 24.15.143.33 at 2017-09-22 19:14:20 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/login/form.css"):
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
@@ -50362,6 +50970,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
@@ -50389,6 +50998,68 @@ Cannot render console from 67.167.25.193! Allowed networks: 127.0.0.1, ::1, 127.
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.4ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 24.15.143.33 at 2017-09-22 19:14:20 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7f3210f4df2a89c46d74c506a593ac9053a9e9e56f9609b6c0441f7424dc6fe2.css?body=1" for 24.15.143.33 at 2017-09-22 19:14:20 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 24.15.143.33 at 2017-09-22 19:14:20 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 24.15.143.33 at 2017-09-22 19:14:20 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 24.15.143.33 at 2017-09-22 19:14:20 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 19:19:33 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+URI::InvalidURIError (bad URI(is not URI?):  /login):
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:67:in `split'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/rfc3986_parser.rb:73:in `parse'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/uri/common.rb:227:in `parse'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/redirection.rb:26:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/redirection.rb:21:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/mapper.rb:51:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -50416,6 +51087,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
@@ -50425,6 +51097,23 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
 
 Started GET "/form.css" for 67.167.25.193 at 2017-10-13 14:59:01 +0000
 Cannot render console from 67.167.25.193! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.2ms)
+
+
+Started GET "/login" for 24.15.143.33 at 2017-09-22 19:19:45 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form.css" for 24.15.143.33 at 2017-09-22 19:19:45 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -50455,6 +51144,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
@@ -50524,6 +51214,81 @@ Cannot render console from 67.167.25.193! Allowed networks: 127.0.0.1, ::1, 127.
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.2ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 19:23:03 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'login'` to `controller: 'login'`. (called from block in <top (required)> at /home/ubuntu/workspace/foodbank/config/routes.rb:2)
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.2ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 19:23:23 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ArgumentError (Invalid route name, already in use: 'root' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  config/routes.rb:32:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.4ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 19:23:41 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (uninitialized constant LoginController):
+  activesupport (4.2.7.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.7.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.7.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.7.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.7.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7.1) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -50551,6 +51316,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
@@ -50571,6 +51337,24 @@ Completed 200 OK in 105ms (Views: 14.6ms | ActiveRecord: 0.7ms)
 
 Started GET "/form.css" for 67.167.25.193 at 2017-10-13 14:59:12 +0000
 Cannot render console from 67.167.25.193! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.4ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 19:24:29 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form.css" for 24.15.143.33 at 2017-09-22 19:24:30 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -50601,6 +51385,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
@@ -50610,6 +51395,24 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
 
 Started GET "/form.css" for 67.167.25.193 at 2017-10-13 14:59:13 +0000
 Cannot render console from 67.167.25.193! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (79.1ms)
+
+
+Started GET "/" for 24.15.143.33 at 2017-09-22 19:24:46 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form.css" for 24.15.143.33 at 2017-09-22 19:24:46 +0000
+Cannot render console from 24.15.143.33! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -50640,6 +51443,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
@@ -50660,6 +51464,24 @@ Completed 200 OK in 24ms (Views: 17.4ms | ActiveRecord: 1.0ms)
 
 Started GET "/form.css" for 67.167.25.193 at 2017-10-13 14:59:28 +0000
 Cannot render console from 67.167.25.193! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.5ms)
+
+
+Started GET "/" for 67.167.24.10 at 2017-09-24 22:02:01 +0000
+Cannot render console from 67.167.24.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 312ms (Views: 302.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form.css" for 67.167.24.10 at 2017-09-24 22:02:02 +0000
+Cannot render console from 67.167.24.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -50690,6 +51512,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
@@ -50699,6 +51522,34 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
 
 Started GET "/form.css" for 67.167.25.193 at 2017-10-13 14:59:29 +0000
 Cannot render console from 67.167.25.193! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (101.2ms)
+
+
+Started POST "/login" for 67.167.24.10 at 2017-09-24 22:02:04 +0000
+Cannot render console from 67.167.24.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WzPZfjOuNhbJjSOM5B1bLysrXyMItGBJIaJ/8YgoRVPlxSmfkQgLogmJGpnjeTPC1Oz1wdqLdPSiw29vljAnpA==", "session"=>{"email"=>"test@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "test@yahoo.com"]]
+Redirected to https://capstone-kevinjcurtis.c9users.io/forms
+Completed 302 Found in 158ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/forms" for 67.167.24.10 at 2017-09-24 22:02:05 +0000
+Cannot render console from 67.167.24.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FormsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered forms/index.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/form.css" for 67.167.24.10 at 2017-09-24 22:02:05 +0000
+Cannot render console from 67.167.24.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -50729,8 +51580,16 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.8ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.4ms)
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.4ms)
+>>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
