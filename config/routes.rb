@@ -1,9 +1,5 @@
 Foodbank:: Application.routes.draw do 
-<<<<<<< HEAD
-     root 'sessions#new'
-=======
     root 'sessions#new'
->>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
     resources :forms, :fb_agencies, :meal_programs, :grocery_plans, :food_safeties, :direct_connect_programs,
     :ef_programs, :program_procedures, :signature_documents, :proxy_forms, :part_six_forms, :part_seven_eight_forms,
     :users
@@ -32,9 +28,5 @@ Foodbank:: Application.routes.draw do
    delete 'logout' => 'sessions#destroy'
 
     
-<<<<<<< HEAD
-   
 
-=======
->>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 end
