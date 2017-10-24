@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
   def new
   end
   def destroy
-    rest_session
+    reset_session
     redirect_to '/login'
   end
 end

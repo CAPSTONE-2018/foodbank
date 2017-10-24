@@ -51595,6 +51595,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
 >>>>>>> 6544a3448fc57cf8669ea9cb294a0ea1971a46ca
 
 
+<<<<<<< HEAD
 Started GET "/" for 38.69.30.114 at 2017-10-17 17:26:55 +0000
 Cannot render console from 38.69.30.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by SessionsController#new as HTML
@@ -51607,6 +51608,43 @@ Cannot render console from 38.69.30.114! Allowed networks: 127.0.0.1, ::1, 127.0
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+=======
+Started GET "/" for 98.144.108.87 at 2017-10-14 18:12:12 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `initialize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `new'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.7.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.7.1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+>>>>>>> ab37a05df4807d23bd3446df457e404ce9c90f83
   web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
   web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
@@ -51634,6 +51672,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.8ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.9ms)
@@ -51667,6 +51706,23 @@ Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
 
 Started GET "/form.css" for 38.69.30.114 at 2017-10-17 17:26:59 +0000
 Cannot render console from 38.69.30.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.5ms)
+
+
+Started GET "/" for 98.144.108.87 at 2017-10-14 18:12:39 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (8.3ms)
+Completed 200 OK in 314ms (Views: 305.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form.css" for 98.144.108.87 at 2017-10-14 18:12:39 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> ab37a05df4807d23bd3446df457e404ce9c90f83
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -51697,6 +51753,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
@@ -51724,6 +51781,53 @@ Completed 200 OK in 34ms (Views: 13.1ms | ActiveRecord: 0.7ms)
 
 Started GET "/form.css" for 38.69.30.114 at 2017-10-17 17:27:10 +0000
 Cannot render console from 38.69.30.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (16.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (141.0ms)
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 98.144.108.87 at 2017-10-14 18:12:40 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-9a41862206a64581f8da0afa23f625f37318c916192bd956e4445ffa9b329aeb.css?body=1" for 98.144.108.87 at 2017-10-14 18:12:40 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 98.144.108.87 at 2017-10-14 18:12:40 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 98.144.108.87 at 2017-10-14 18:12:40 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 98.144.108.87 at 2017-10-14 18:12:40 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/login" for 98.144.108.87 at 2017-10-14 18:12:52 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"byYJnGWOfMtlGu58rKd0Eslz9HWmwql+tGBCEbPB3TKWRM981pQ982qc2i26ZSrFXmtjgW/ObSKxpXu4BeVuMw==", "session"=>{"email"=>"howardcy@lewisu.edu", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "howardcy@lewisu.edu"]]
+Redirected to https://teaching-howardcy.c9users.io/login
+Completed 302 Found in 163ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/login" for 98.144.108.87 at 2017-10-14 18:12:52 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/form.css" for 98.144.108.87 at 2017-10-14 18:12:52 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> ab37a05df4807d23bd3446df457e404ce9c90f83
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -51754,6 +51858,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
   /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
 
 
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
@@ -51763,6 +51868,44 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
 
 Started GET "/form.css" for 38.69.30.114 at 2017-10-17 17:27:11 +0000
 Cannot render console from 38.69.30.114! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.6ms)
+
+
+Started GET "/signup" for 98.144.108.87 at 2017-10-14 18:12:57 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.haml within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 20.6ms | ActiveRecord: 7.3ms)
+
+
+Started POST "/users" for 98.144.108.87 at 2017-10-14 18:13:08 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O2MiwF37d0830Woc4AzZa5mxjvBVi/CLQjOSRULJopnCAeQg7uE2dzhXXk32zoe8DqkZBJyHNNdH9qvs9O0RmA==", "user"=>{"first_name"=>"Cindy", "last_name"=>"Howard", "email"=>"howardcy@lewisu.edu", "password"=>"[FILTERED]"}, "commit"=>"Create an account"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'howardcy@lewisu.edu' LIMIT 1[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["first_name", "Cindy"], ["last_name", "Howard"], ["email", "howardcy@lewisu.edu"], ["password_digest", "$2a$10$2znYUJ8x/il.8Bv5H5QPh.OeoYieYApBYCLcZKqNtSCNJCIMiB7D."], ["created_at", "2017-10-14 18:13:08.102502"], ["updated_at", "2017-10-14 18:13:08.102502"]]
+  [1m[36m (3.0ms)[0m  [1mCOMMIT[0m
+Redirected to https://teaching-howardcy.c9users.io/forms
+Completed 302 Found in 198ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/forms" for 98.144.108.87 at 2017-10-14 18:13:08 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FormsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered forms/index.html.haml within layouts/application (26.6ms)
+Completed 200 OK in 48ms (Views: 42.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/form.css" for 98.144.108.87 at 2017-10-14 18:13:08 +0000
+Cannot render console from 98.144.108.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+>>>>>>> ab37a05df4807d23bd3446df457e404ce9c90f83
 
 ActionController::RoutingError (No route matches [GET] "/form.css"):
   actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
@@ -51794,6 +51937,7 @@ ActionController::RoutingError (No route matches [GET] "/form.css"):
 
 
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+<<<<<<< HEAD
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
@@ -51805,3 +51949,9 @@ Cannot render console from 38.69.30.114! Allowed networks: 127.0.0.1, ::1, 127.0
 Processing by SessionsController#new as HTML
   Rendered sessions/new.html.haml within layouts/application (0.9ms)
 Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+=======
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.0ms)
+>>>>>>> ab37a05df4807d23bd3446df457e404ce9c90f83
