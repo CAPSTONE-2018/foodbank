@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171024201629) do
+ActiveRecord::Schema.define(version: 20171025150837) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -109,6 +109,7 @@ ActiveRecord::Schema.define(version: 20171024201629) do
     t.text    "DaysOfOperation"
     t.text    "SingleAudit"
     t.text    "HandicapAccessible"
+    t.integer "form_id"
   end
 
   create_table "food_safeties", force: :cascade do |t|
@@ -195,19 +196,21 @@ ActiveRecord::Schema.define(version: 20171024201629) do
     t.datetime "DateOfDSNIFBRep"
     t.text     "DigitalSignAgencyRep"
     t.datetime "DateOfDSAgencyRep"
+    t.integer  "form_id"
   end
 
   create_table "part_seven_eight_forms", force: :cascade do |t|
-    t.text   "Violations"
-    t.text   "AccoladesComments"
-    t.text   "Volunteers"
-    t.text   "Equiptment"
-    t.text   "Funding"
-    t.text   "Training"
-    t.text   "DigitalSignNIFBRep"
-    t.string "DateOfDSNIFBRep"
-    t.text   "DigitalSignAgencyRep"
-    t.string "DateOfDSAgencyRep"
+    t.text    "Violations"
+    t.text    "AccoladesComments"
+    t.text    "Volunteers"
+    t.text    "Equiptment"
+    t.text    "Funding"
+    t.text    "Training"
+    t.text    "DigitalSignNIFBRep"
+    t.string  "DateOfDSNIFBRep"
+    t.text    "DigitalSignAgencyRep"
+    t.string  "DateOfDSAgencyRep"
+    t.integer "form_id"
   end
 
   create_table "part_six_forms", force: :cascade do |t|
@@ -257,9 +260,12 @@ ActiveRecord::Schema.define(version: 20171024201629) do
 
   add_foreign_key "direct_connect_programs", "forms"
   add_foreign_key "ef_programs", "forms"
+  add_foreign_key "fb_agencies", "forms"
   add_foreign_key "food_safeties", "forms"
   add_foreign_key "grocery_plans", "forms"
   add_foreign_key "meal_programs", "forms"
+  add_foreign_key "part7_8_forms", "forms"
+  add_foreign_key "part_seven_eight_forms", "forms"
   add_foreign_key "part_six_forms", "forms"
   add_foreign_key "program_procedures", "forms"
 end
