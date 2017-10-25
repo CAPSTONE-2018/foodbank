@@ -1,4 +1,4 @@
 class FoodSafety < ActiveRecord::Base
-    belongs_to :food_safeties
+    belongs_to :forms
     
 end

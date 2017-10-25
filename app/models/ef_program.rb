@@ -1,4 +1,4 @@
 class EfProgram < ActiveRecord::Base
-    belongs_to :ef_programs
+    belongs_to :forms
     
 end

@@ -1,5 +1,4 @@
 class FbAgency < ActiveRecord::Base
-    belongs_to :fb_agencies
-  
-    
+    has_many :forms
+
 end

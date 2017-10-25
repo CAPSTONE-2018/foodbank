@@ -1,4 +1,4 @@
 class ProgramProcedure < ActiveRecord::Base
-    belongs_to :program_procedures
+    belongs_to :forms
     
 end
