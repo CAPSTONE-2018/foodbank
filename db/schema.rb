@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171025150837) do
+ActiveRecord::Schema.define(version: 20171025211921) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -233,20 +233,22 @@ ActiveRecord::Schema.define(version: 20171025150837) do
   end
 
   create_table "proxy_forms", force: :cascade do |t|
-    t.string "CorrectYear"
-    t.text   "OriginalSignature"
-    t.text   "SignInPresenceOfPantryPersonnel"
+    t.string  "CorrectYear"
+    t.text    "OriginalSignature"
+    t.text    "SignInPresenceOfPantryPersonnel"
+    t.integer "form_id"
   end
 
   create_table "signature_documents", force: :cascade do |t|
-    t.string "DHS_TANFSignaturesDocumentsUsed"
-    t.string "SignatureSheetsForCorrectYears"
-    t.text   "FoodBankNameOnSheet"
-    t.text   "DateOnSignatureSheet"
-    t.text   "ReciptientSignTheirName"
-    t.text   "ClientAddressRecorded"
-    t.text   "HouseholdSizeRecorded"
-    t.text   "NumOfChildren18andUnderRecorded"
+    t.string  "DHS_TANFSignaturesDocumentsUsed"
+    t.string  "SignatureSheetsForCorrectYears"
+    t.text    "FoodBankNameOnSheet"
+    t.text    "DateOnSignatureSheet"
+    t.text    "ReciptientSignTheirName"
+    t.text    "ClientAddressRecorded"
+    t.text    "HouseholdSizeRecorded"
+    t.text    "NumOfChildren18andUnderRecorded"
+    t.integer "form_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -268,4 +270,6 @@ ActiveRecord::Schema.define(version: 20171025150837) do
   add_foreign_key "part_seven_eight_forms", "forms"
   add_foreign_key "part_six_forms", "forms"
   add_foreign_key "program_procedures", "forms"
+  add_foreign_key "proxy_forms", "forms"
+  add_foreign_key "signature_documents", "forms"
 end
