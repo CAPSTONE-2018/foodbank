@@ -8,6 +8,7 @@ class FbAgenciesController < ApplicationController
     def index
         @forms = Form.all
     end
+    
     def create
         @fb_agency = FbAgency.create!(agencies_params)
         render '/forms/mealplan'

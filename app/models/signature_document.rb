@@ -1,4 +1,4 @@
 class SignatureDocument < ActiveRecord::Base
-    belongs_to :signature_documents
+    belongs_to :forms
     
 end

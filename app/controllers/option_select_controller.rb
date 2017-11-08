@@ -1,4 +1,6 @@
 class OptionSelectController < ApplicationController
-def options
-end
+    def options
+    end
+
+  
 end

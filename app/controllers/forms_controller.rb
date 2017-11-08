@@ -4,4 +4,8 @@ class FormsController < ApplicationController
         @forms = Form.all
     end
     
+    def new
+        
+    end
+    
 end

@@ -1,8 +1,10 @@
 Foodbank:: Application.routes.draw do 
+ 
+
  root 'sessions#new'
     resources :forms, :fb_agencies, :meal_programs, :grocery_plans, :food_safeties, :direct_connect_programs,
     :ef_programs, :program_procedures, :signature_documents, :proxy_forms, :part_six_forms, :part_seven_eight_forms,
-    :users, :options
+    :users, :options, :posts
 
     
     
