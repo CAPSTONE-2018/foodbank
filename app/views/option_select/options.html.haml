@@ -1,0 +1,12 @@
+%body
+  !!! XML
+  #wrapper
+    = form_tag options_url :method => :post do
+      .form-group  
+        .row
+        = link_to 'Add New Agency', forms_path
+        %br
+        = link_to 'View Agencies'
+        %br
+        = link_to 'Update Agencies'
+        

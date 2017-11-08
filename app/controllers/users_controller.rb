@@ -9,7 +9,7 @@ class UsersController < ApplicationController
        
         if @user.save 
             session[:user_id] = @user.id 
-            redirect_to forms_path
+            redirect_to '/option_select/options'
         else
             render :new
         end 
