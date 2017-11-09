@@ -43,3 +43,9 @@ form label {
   font-weight: bold;
   color: Black;
 }
+table#forms {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
