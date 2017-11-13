@@ -5,7 +5,8 @@
     %tr
         %th Agency Name
         %th Completion Date
-        %th Number of Forms 
-        %th More Info
     %tbody
-      
+    -@forms.each do |agency|
+        %tr
+            %td= agency.AgencyName
+            %td= agency.DateOfVerification

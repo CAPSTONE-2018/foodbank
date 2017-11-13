@@ -6,12 +6,13 @@ class FbAgenciesController < ApplicationController
         :SoupKitchen, :GroupHome, :Shelter, :Daycare, :YouthProgram, :FoodPantry, :Seasonal, :MobilePantry, :Backpack, :PersonInterviewed, :DaysOfOperation, :SingleAudit, :HandicapAccessible)
     end
     def index
-        @forms = Form.all
+  
+        @fb_agencies = FbAgency.all
+
     end
     
     def create
         @fb_agency = FbAgency.create!(agencies_params)
         render '/forms/mealplan'
     end 
-    
 end
