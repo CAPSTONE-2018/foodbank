@@ -1,0 +1,52 @@
+%body
+  !!! XML
+  #wrapper
+    = form_tag fb_agencies_url :method => :post do
+      .form-group
+        .row
+          .col-xs-2.pull-left.col-sm-2.lm
+            = label :fb_agency, :PrimaryEmail, 'Primary Email'
+            = text_field :fb_agency, :PrimaryEmail
+        .row
+          .col-xs-2.pull-left.col-sm-2.lm
+            = label :fb_agency, :DateMostRecentTraining, 'Date of Most Recent Food Safety Training (YYYY-MM-DD)'
+            = text_field :fb_agency, :DateMostRecentTraining
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :fb_agency, :TaxExemptOnFile, 'Does Northern Illinois Food Bank have current verification of tax exempt status on file?'
+          .pull-right.col-sm-12
+            %label.radio-inline Yes
+            = text_field :fb_agency, :TaxExemptOnFile, :type => "radio", :value => "Yes"
+
+            %label.radio-inline No
+            = text_field :fb_agency, :TaxExemptOnFile, :type => "radio", :value => "No"
+            %p
+            / Temporary Solution For Appearance
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :fb_agency, :IRSVerification, 'Was it verified on the IRS Automatic Revocation of Exemption List?'
+          .pull-right.col-sm-12
+            %label.radio-inline Yes
+            =text_field :fb_agency, :IRSVerification, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :fb_agency, :IRSVerification, :type => "radio", :value => "No"
+            %p
+            / Temporary Solution For Appearance
+        .row
+          .col-xs-2.pull-left.col-sm-5
+            =label :fb_agency, :DateOfVerification, "Date of Verification (Found at:"
+            %a{:href => "http://www.irs.gov/charities/article/0,,name=240099.html"} http://www.irs.gov/charities/article/0,,name=240099.html
+            = text_field :fb_agency, :DateOfVerification
+        %br
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            =label :fb_agency,:EEP, 'Emergency Food Program(EEP)?'
+          .pull-right.col-sm-12
+            %label.radio-inline Yes
+            =text_field :fb_agency, :EEP, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :fb_agency, :EEP, :type => "radio", :value => "No"
+            %p
+            / Temporary Solution For Appearance
+        .row.pull-right.rm
+          = submit_tag 'Next'

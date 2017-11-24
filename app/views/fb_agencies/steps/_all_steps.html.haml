@@ -1,0 +1,4 @@
+= hidden_field_tag :all, 1
+- FbAgency.total_steps.times do |step|
+  = render "fb_agencies/steps/page#{step + 1}", f: f
+= f.submit

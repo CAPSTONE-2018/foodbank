@@ -38,3 +38,12 @@ form label {
   font-weight: bold;
   color: Black;
 }
+#errors{
+  font-family: Tahoma, Verdana, sans-serif;
+  font-weight: bold;
+  color: red;
+}
+
+.field_with_errors{
+  border: 2px solid red;
+}

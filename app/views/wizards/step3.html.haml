@@ -1,0 +1,75 @@
+%body
+  !!! XML
+  #wrapper
+      
+    = form_tag validate_step_wizard_url :method => :post do
+      = hidden_field_tag "current_step", "step3"
+      .form-group
+      .row
+        .col-xs-2.pull-left.col-sm-2.lm
+          =label :fb_agency, :DateOfContract, 'Date of Contract'
+          =text_field :fb_agency, :DateOfContract
+        %br
+        .row.yes-no-quest
+          %p.pull-left
+            %b
+              Meal Program
+            %br
+              %small (5 year certificate)
+          .col-xs-2.pull-right.col-sm-10.rm
+            %label.checkbox-inline  Soup Kitchen
+            = text_field :fb_agency, :SoupKitchen,:type => "checkbox", :value => "Yes"
+            %label.checkbox-inline Group Home
+            = text_field :fb_agency, :GroupHome, :type => "checkbox", :value => "Yes"
+            %label.checkbox-inline Shelter/Transitional Living
+            = text_field :fb_agency, :Shelter, :type => "checkbox", :value => "Yes"
+            %label.checkbox-inline Daycare
+            = text_field :fb_agency, :Daycare, :type => "checkbox", :value => "Yes"
+            %label.checkbox-inline  Youth Program/After School
+            = text_field :fb_agency, :YouthProgram, :type => "checkbox", :value => "Yes"
+            %p
+        .row.yes-no-quest
+          %p.pull-left
+            %b
+              Grocery Program
+            %br
+              %small (2 year certificate)
+          .col-xs-2.pull-right.col-sm-10.rm
+            %label.checkbox-inline Food Pantry
+            = text_field :fb_agency, :FoodPantry, :type => "checkbox", :value => "Yes"
+            %label.checkbox-inline Seasonal
+            = text_field :fb_agency, :Seasonal, :type => "checkbox", :value => "Yes"
+            %label.checkbox-inline Mobile Pantry
+            = text_field :fb_agency, :MobilePantry, :type => "checkbox", :value => "Yes"
+            %label.checkbox-inline Backpack
+            = text_field :fb_agency, :Backpack, :type => "checkbox", :value => "Yes"
+            %p
+        .row
+          .col-xs-2.pull-left.col-sm-2.lm
+            = label :fb_agency, :PersonInterviewed, 'Person Interviewed'
+            = text_field :fb_agency, :PersonInterviewed
+        .row
+          .col-xs-2.pull-left.col-sm-4.lm
+            = label :fb_agency, :DaysOfOperation, 'Days & times of operation'
+            =text_field :fb_agency, :DaysOfOperation, :placeholder => "Ex. MWF, 9a - 12p", :type => "text"
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :fb_agency, :SingleAudit, 'Is your organization required to have a single audit?'
+          .pull-right.col-sm-12
+            %label.radio-inline Yes
+            = text_field :fb_agency, :SingleAudit, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :fb_agency, :SingleAudit, :type => "radio", :value => "No"
+          %p.pull-left.col-sm-6
+            %small (If YES, obtain a copy or ask the site to provide a copy of the most recent audit within the next 30 days)
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            %b
+              = label :fb_agency, :HandicapAccessible, 'Does the agency appear to be handicapped accessible?'
+              .pull-right.col-sm-12
+                %label.radio-inline Yes
+                = text_field :fb_agency, :HandicapAccessible, :type => "radio", :value => "Yes"
+                %label.radio-inline No
+                = text_field :fb_agency, :HandicapAccessible, :type => "radio", :value => "No"
+        .row.pull-right.rm
+          = submit_tag 'Next'

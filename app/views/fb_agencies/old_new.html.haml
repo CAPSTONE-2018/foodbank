@@ -1,0 +1,71 @@
+%body
+  !!! XML
+  #wrapper
+ 
+    = form_tag  fb_agencies_url :method => :post do
+      = hidden_field_tag "current_step", "index"
+      .form-group
+        .row
+          .col-xs-2.pull-right.col-sm-3.rm
+            = label :fb_agency, :AgencyCounty, 'Agency County'
+            = text_field :fb_agency, :AgencyCounty
+            
+        .row
+          .col-xs-2.pull-right.col-sm-3.rm
+            = label :fb_agency, :AgencyNumber, 'Agency #'
+            = text_field :fb_agency, :AgencyNumber
+            
+        .row
+          .text-center
+            %h2 Network Partner Monitoring Form
+        .row
+          .col-xs-2.pull-left.col-sm-2.lm
+            = label :fb_agency, :TodaysDate, "Today's Date"
+            = text_field :fb_agency, :TodaysDate
+          .col-xs-2.pull-left.col-sm-2.rm
+            = label :fb_agency, :DofLastMonitor,  'Date of Last Monitor'
+            = text_field :fb_agency, :DofLastMonitor
+        .row
+          .col-xs-2.pull-left.col-sm-2.lm
+            = label :fb_agency, :AgencyName, 'Agency Name'
+            = text_field :fb_agency, :AgencyName
+          .col-xs-2.pull-left.col-sm-2.rm
+            = label :fb_agency, :AgencyNumber, 'Agency #'
+            = text_field :fb_agency, :AgencyNumber
+        .row
+          .col-xs-2.pull-left.col-sm-2.lm
+            = label :fb_agency, :ParentAgency, 'Parent Agency'
+            = text_field :fb_agency, :ParentAgency
+          .col-xs-2.pull-left.col-sm-2.rm
+            = label :fb_agency, :PAgencyNum, 'Agency #'
+            = text_field :fb_agency, :PAgencyNum
+        .row
+          .col-xs-2.pull-left.col-sm-2.lm
+            = label :fb_agency, :SiteAddress, 'Site Address'
+            = text_field :fb_agency, :SiteAddress
+          .col-xs-2.pull-left.col-sm-2.rm
+            = label :fb_agency, :SiteNumber, 'Phone #'
+            = text_field :fb_agency, :SiteNumber 
+        .row
+          .col-xs-2.pull-left.col-sm-2.lm
+            = label :fb_agency, :ContactName, 'Contact Name'
+            = text_field :fb_agency, :ContactName
+          .col-xs-2.pull-left.col-sm-2.rm
+            = label :fb_agency, :ContactNum,  'Phone #'
+            = text_field :fb_agency, :ContactNum
+        .row
+          .col-xs-2.pull-left.col-sm-2.lm
+            = label :fb_agency, :Director, "Director's Name"
+            = text_field :fb_agency, :Director
+          .col-xs-2.pull-left.col-sm-2.rm
+            = label :fb_agency, :DirectorNum, 'Phone #'
+            = text_field :fb_agency, :DirectorNum
+        .row
+          .col-xs-2.pull-left.col-sm-2.lm
+            = label :fb_agency, :AdditionalContact, 'Additional Contact Name'
+            = text_field :fb_agency, :AdditionalContact
+          .col-xs-2.pull-left.col-sm-2.rm
+            = label :fb_agency, :AdditionalNum,'Phone #'
+            = text_field :fb_agency, :AdditionalNum
+        .row.pull-right.rm
+          = submit_tag 'Next'

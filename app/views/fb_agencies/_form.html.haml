@@ -1,0 +1,10 @@
+- if @fb_agency.errors.any?
+  #errors
+    %ul
+      - @fb_agency.errors.full_messages.each do |msg|
+        %li= msg
+= form_for @fb_agency do |f|
+  - if params[:all].nil?
+    = render 'fb_agencies/steps/current_step', f: f
+  - else
+    = render 'fb_agencies/steps/all_steps', f
