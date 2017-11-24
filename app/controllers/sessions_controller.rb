@@ -11,8 +11,10 @@ class SessionsController < ApplicationController
     flash[:notice]="Unable to login, try again!"
   end 
   end
+  
   def new
   end
+  
   def destroy
     reset_session
     #session[:user_id] = nil

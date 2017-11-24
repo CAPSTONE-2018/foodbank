@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170226233641) do
+ActiveRecord::Schema.define(version: 20171025211921) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "Violations_Concerns", force: :cascade do |t|
     t.text     "AccoladesCommentsFromAgencyStaff"
@@ -28,11 +31,12 @@ ActiveRecord::Schema.define(version: 20170226233641) do
   end
 
   create_table "direct_connect_programs", force: :cascade do |t|
-    t.text "DirectConnectParticipate"
-    t.text "ColdFoodTransport"
-    t.text "PickupPaperwork"
-    t.text "SampleTemps"
-    t.text "TempControlledDevices"
+    t.text    "DirectConnectParticipate"
+    t.text    "ColdFoodTransport"
+    t.text    "PickupPaperwork"
+    t.text    "SampleTemps"
+    t.text    "TempControlledDevices"
+    t.integer "form_id"
   end
 
   create_table "ef_programs", force: :cascade do |t|
@@ -65,6 +69,7 @@ ActiveRecord::Schema.define(version: 20170226233641) do
     t.string  "CorrectYear"
     t.text    "OriginalSignature"
     t.text    "SignInPresenceOfPantryPersonnel"
+    t.integer "form_id"
   end
 
   create_table "fb_agencies", force: :cascade do |t|
@@ -104,6 +109,7 @@ ActiveRecord::Schema.define(version: 20170226233641) do
     t.text    "DaysOfOperation"
     t.text    "SingleAudit"
     t.text    "HandicapAccessible"
+    t.integer "form_id"
   end
 
   create_table "food_safeties", force: :cascade do |t|
@@ -123,6 +129,7 @@ ActiveRecord::Schema.define(version: 20170226233641) do
     t.text     "FreezerTemp"
     t.text     "WorkingThermometers"
     t.text     "TempLogsMaintainedAndPosted"
+    t.integer  "form_id"
   end
 
   create_table "forms", force: :cascade do |t|
@@ -153,6 +160,7 @@ ActiveRecord::Schema.define(version: 20170226233641) do
     t.integer "TrackClientParticipation"
     t.integer "Confidential"
     t.integer "Delivery"
+    t.integer "form_id"
   end
 
   create_table "meal_programs", force: :cascade do |t|
@@ -174,6 +182,7 @@ ActiveRecord::Schema.define(version: 20170226233641) do
     t.integer "SchoolFee"
     t.integer "NumSchoolReducedLunches"
     t.integer "NumFreeLunch"
+    t.integer "form_id"
   end
 
   create_table "part7_8_forms", force: :cascade do |t|
@@ -187,53 +196,59 @@ ActiveRecord::Schema.define(version: 20170226233641) do
     t.datetime "DateOfDSNIFBRep"
     t.text     "DigitalSignAgencyRep"
     t.datetime "DateOfDSAgencyRep"
+    t.integer  "form_id"
   end
 
   create_table "part_seven_eight_forms", force: :cascade do |t|
-    t.text   "Violations"
-    t.text   "AccoladesComments"
-    t.text   "Volunteers"
-    t.text   "Equiptment"
-    t.text   "Funding"
-    t.text   "Training"
-    t.text   "DigitalSignNIFBRep"
-    t.string "DateOfDSNIFBRep"
-    t.text   "DigitalSignAgencyRep"
-    t.string "DateOfDSAgencyRep"
+    t.text    "Violations"
+    t.text    "AccoladesComments"
+    t.text    "Volunteers"
+    t.text    "Equiptment"
+    t.text    "Funding"
+    t.text    "Training"
+    t.text    "DigitalSignNIFBRep"
+    t.string  "DateOfDSNIFBRep"
+    t.text    "DigitalSignAgencyRep"
+    t.string  "DateOfDSAgencyRep"
+    t.integer "form_id"
   end
 
   create_table "part_six_forms", force: :cascade do |t|
-    t.text "Membership_Liability"
-    t.text "FoodSanitationLicense"
-    t.text "HealthDepartmentPermit"
-    t.text "PestControl"
+    t.text    "Membership_Liability"
+    t.text    "FoodSanitationLicense"
+    t.text    "HealthDepartmentPermit"
+    t.text    "PestControl"
+    t.integer "form_id"
   end
 
   create_table "program_procedures", force: :cascade do |t|
-    t.text "RequireClientDocuments"
-    t.text "DocumentsRequested"
-    t.text "PurposeForRequestingDocumentation"
-    t.text "ReceiveFoodOnceEvery30days"
-    t.text "RequiredToObtainReferral"
-    t.text "OtherFoodsWithGovernemntCommodities"
-    t.text "PostersVisible"
+    t.text    "RequireClientDocuments"
+    t.text    "DocumentsRequested"
+    t.text    "PurposeForRequestingDocumentation"
+    t.text    "ReceiveFoodOnceEvery30days"
+    t.text    "RequiredToObtainReferral"
+    t.text    "OtherFoodsWithGovernemntCommodities"
+    t.text    "PostersVisible"
+    t.integer "form_id"
   end
 
   create_table "proxy_forms", force: :cascade do |t|
-    t.string "CorrectYear"
-    t.text   "OriginalSignature"
-    t.text   "SignInPresenceOfPantryPersonnel"
+    t.string  "CorrectYear"
+    t.text    "OriginalSignature"
+    t.text    "SignInPresenceOfPantryPersonnel"
+    t.integer "form_id"
   end
 
   create_table "signature_documents", force: :cascade do |t|
-    t.string "DHS_TANFSignaturesDocumentsUsed"
-    t.string "SignatureSheetsForCorrectYears"
-    t.text   "FoodBankNameOnSheet"
-    t.text   "DateOnSignatureSheet"
-    t.text   "ReciptientSignTheirName"
-    t.text   "ClientAddressRecorded"
-    t.text   "HouseholdSizeRecorded"
-    t.text   "NumOfChildren18andUnderRecorded"
+    t.string  "DHS_TANFSignaturesDocumentsUsed"
+    t.string  "SignatureSheetsForCorrectYears"
+    t.text    "FoodBankNameOnSheet"
+    t.text    "DateOnSignatureSheet"
+    t.text    "ReciptientSignTheirName"
+    t.text    "ClientAddressRecorded"
+    t.text    "HouseholdSizeRecorded"
+    t.text    "NumOfChildren18andUnderRecorded"
+    t.integer "form_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -245,4 +260,16 @@ ActiveRecord::Schema.define(version: 20170226233641) do
     t.datetime "updated_at"
   end
 
+  add_foreign_key "direct_connect_programs", "forms"
+  add_foreign_key "ef_programs", "forms"
+  add_foreign_key "fb_agencies", "forms"
+  add_foreign_key "food_safeties", "forms"
+  add_foreign_key "grocery_plans", "forms"
+  add_foreign_key "meal_programs", "forms"
+  add_foreign_key "part7_8_forms", "forms"
+  add_foreign_key "part_seven_eight_forms", "forms"
+  add_foreign_key "part_six_forms", "forms"
+  add_foreign_key "program_procedures", "forms"
+  add_foreign_key "proxy_forms", "forms"
+  add_foreign_key "signature_documents", "forms"
 end

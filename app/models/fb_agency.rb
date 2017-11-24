@@ -1,5 +1,5 @@
 class FbAgency < ActiveRecord::Base
-    #belongs_to :fb_agencies
+ #belongs_to :fb_agencies
     
     include MultiStepModel
     def self.total_steps

@@ -3,14 +3,14 @@ class UsersController < ApplicationController
     def new
         @user = User.new
     end
-    
+
     def create
         
         @user = User.new(user_params)
        
         if @user.save 
             session[:user_id] = @user.id 
-            redirect_to step1_wizard_path
+            redirect_to '/option_select/options'
         else
             render :new
         end 

@@ -4,6 +4,8 @@ Foodbank:: Application.routes.draw do
     #:ef_programs, :program_procedures, :signature_documents, :proxy_forms, :part_six_forms, :part_seven_eight_forms,
     resources :fb_agencies, :grocery_plans, :forms
 
+ 
+
 =begin
     resource :wizard do
         get :step1
@@ -27,8 +29,19 @@ Foodbank:: Application.routes.draw do
    # get '/forms.css'
 
    
+
     
-     get 'signup'  => 'users#new'
+    get '/forms/foodsafety'
+    get '/forms/mealplan'
+    get '/forms/groceryplan'
+    get '/forms/directconnect'
+    get '/forms/emergencyfood'
+    get '/forms/part6'
+    get '/forms/part7_8'
+    get 'option_select/options'
+    
+   
+   get 'signup'  => 'users#new'
    resources :users
   
    get '/login' => 'sessions#new'
@@ -37,4 +50,6 @@ Foodbank:: Application.routes.draw do
   
    delete 'logout' => 'sessions#destroy'
     
+   
+
 end

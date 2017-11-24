@@ -1,4 +1,4 @@
 class GroceryPlan < ActiveRecord::Base
-    belongs_to :grocery_plans
+    belongs_to :forms
     
 end

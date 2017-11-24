@@ -1,0 +1,21 @@
+                 List of relations
+ Schema |          Name           | Type  | Owner  
+--------+-------------------------+-------+--------
+ public | Violations_Concerns     | table | ubuntu
+ public | direct_connect_programs | table | ubuntu
+ public | ef_programs             | table | ubuntu
+ public | fb_agencies             | table | ubuntu
+ public | food_safeties           | table | ubuntu
+ public | forms                   | table | ubuntu
+ public | grocery_plans           | table | ubuntu
+ public | meal_programs           | table | ubuntu
+ public | part7_8_forms           | table | ubuntu
+ public | part_seven_eight_forms  | table | ubuntu
+ public | part_six_forms          | table | ubuntu
+ public | program_procedures      | table | ubuntu
+ public | proxy_forms             | table | ubuntu
+ public | schema_migrations       | table | ubuntu
+ public | signature_documents     | table | ubuntu
+ public | users                   | table | ubuntu
+(16 rows)
+

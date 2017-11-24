@@ -1,4 +1,4 @@
 class ProxyForm < ActiveRecord::Base
-    belongs_to :proxy_forms
+    belongs_to :forms
     
 end
