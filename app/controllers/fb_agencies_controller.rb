@@ -8,13 +8,7 @@ before_action :load_fbagency
 
   def show
   end
-
-  def new
-    @wizard = ModelWizard.new(FbAgency, session, params).start
-    @fb_agency = @wizard.object
-    logger.debug "New agency: #{@fb_agency.attributes.inspect}"
-  end
-
+  
   def edit
     @wizard = ModelWizard.new(@fb_agencies, session, params).start
   end

@@ -1,7 +1,7 @@
 %body
   !!! XML
   #wrapper
-    = form_tag options_url :method => :post do
+    = form_tag options_for_select :method => :post do
       .form-group  
         .row
         = link_to 'Add New Agency', new_form_path
