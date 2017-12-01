@@ -10,7 +10,7 @@ class UsersController < ApplicationController
        
         if @user.save 
             session[:user_id] = @user.id 
-            redirect_to '/option_select/options'
+            redirect_to '/fb_agencies'
         else
             render :new
         end 

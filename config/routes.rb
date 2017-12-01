@@ -30,7 +30,6 @@ Foodbank:: Application.routes.draw do
 
    
 
-    
     get '/forms/foodsafety'
     get '/forms/mealplan'
     get '/forms/groceryplan'
@@ -38,7 +37,6 @@ Foodbank:: Application.routes.draw do
     get '/forms/emergencyfood'
     get '/forms/part6'
     get '/forms/part7_8'
-    get 'option_select/options'
     
    
    get 'signup'  => 'users#new'
@@ -49,7 +47,6 @@ Foodbank:: Application.routes.draw do
    post 'login' => 'sessions#create'
   
    delete 'logout' => 'sessions#destroy'
-    
-   
 
+ 
 end

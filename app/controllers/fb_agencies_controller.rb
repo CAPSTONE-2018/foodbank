@@ -8,7 +8,13 @@ before_action :load_fbagency
 
   def show
   end
-  
+
+  def new
+    @wizard = ModelWizard.new(FbAgency, session, params).start
+    @fb_agency = @wizard.object
+    logger.debug "New agency: #{@fb_agency.attributes.inspect}"
+  end
+
   def edit
     @wizard = ModelWizard.new(@fb_agencies, session, params).start
   end
@@ -28,16 +34,20 @@ before_action :load_fbagency
   def update
     @wizard = ModelWizard.new(@fb_agencies, session, params, agencies_params).continue
     if @wizard.save
-      redirect_to @fb_agencies, notice: 'updated.'
+      redirect_to fb_agencies, notice: 'updated.'
     else
       render :edit
     end
   end
+  
+def destroy
+      @fb_agencies = FbAgency.find(params[:id])
+      @fb_agencies.destroy
+      flash[:notice] = "Agency '#{@fb_agencies.AgencyName}' deleted."
+      redirect_to fb_agencies_path
+end
 
-  def destroy
-    @fb_agencies.destroy
-    redirect_to fb_agencies_url
-  end
+
 
 private
 

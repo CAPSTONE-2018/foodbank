@@ -10,7 +10,11 @@ The Northern Illinois Food Bank does compliance checks with local pantries. They
  The app will keep track of all of the important credentials about each panty, such as their location, director's name and tax verification. It will provide a convenient form to be filled out each time a pantry is monitored, and make note of the person that was spoken too. The application will combine the six pages into an interactive process.
 
  ## Current Status
- The project has been implemented using [Ruby on Rails](http://rubyonrails.org) with a [Postgres](https://www.postgresql.org) database.  The application functions but it is awkward to use. The current version is running on [Heroku](https://radiant-beyond-75664.herokuapp.com/login) (ask me for credentials).  Updates to the project include
- * the ability to attach files and store them in the database
- * retrieval of data from the database
- * reports
+ The project has been implemented using [Ruby on Rails](http://rubyonrails.org) with a [Postgres](https://www.postgresql.org) database.  The current version is running on [Heroku](https://radiant-beyond-75664.herokuapp.com/login) (ask me for credentials).  Updates to the project include
+ * the ability to attach files and store them in the database (we have this working inside our rottenpotatoes app but weren't able to implement it inside this app yet)
+ * Hosting the webservice
+ * Ability to save forms as a PDF
+ * Ability to edit forms
+ * Create FbAgency button pops up in step 3, need to figure out why
+ * Authorization Verification (as it is anyone can signup and submit forms, needs to have some kind of authorization to verify employment)
+ * Reports
