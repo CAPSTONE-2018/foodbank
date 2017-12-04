@@ -37,8 +37,8 @@ Foodbank:: Application.routes.draw do
     get '/forms/emergencyfood'
     get '/forms/part6'
     get '/forms/part7_8'
+    get "howto/:howto"=>"howto#show"
     
-   
    get 'signup'  => 'users#new'
    resources :users
   
