@@ -17,7 +17,7 @@
   * Under the views>fb_agencies>index.html.haml add:
   ```ruby
   %h1 Import:
-  = form_tag import_movies_path, multipart: true do
+  = form_tag import "CORRECT PATH", multipart: true do
       = submit_tag 'Import'
       = file_field_tag :file
   '''
