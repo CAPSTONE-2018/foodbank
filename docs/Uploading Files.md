@@ -14,7 +14,7 @@
             end
     end
     ```
-    * Inside the controller add:
+  * Inside the controller add:
   
     
   
