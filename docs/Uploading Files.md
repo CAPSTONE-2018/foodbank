@@ -14,11 +14,6 @@
     end
     '''
     
-    * Inside the html.haml add:
-    
-    '''ruby %h1 Import:
-            = form_tag import_movies_path, multipart: true do
-                = submit_tag 'Import'
-                = file_field_tag :file
+  
     
   
