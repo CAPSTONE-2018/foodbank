@@ -11,7 +11,7 @@
                 flash[:notice] = "Data imported"
                 redirect_to "CORRECT PATH" notice: "Data Imported."
             end
-    end '''
+    end'''
     
   
     
