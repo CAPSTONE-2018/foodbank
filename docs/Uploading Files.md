@@ -15,7 +15,7 @@
     end
     ```
   * Under the views>fb_agencies>index.html.haml add:
-  ```ruby
+  ```haml
   %h1 Import:
   = form_tag import "CORRECT PATH", multipart: true do
       = submit_tag 'Import'
