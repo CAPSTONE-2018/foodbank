@@ -12,7 +12,7 @@
                 redirect_to "CORRECT PATH" notice: "Data Imported."
             end
     end
-    '''
+    '''ruby
     
     * Inside the html.haml add:
     
