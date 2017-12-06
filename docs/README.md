@@ -15,6 +15,7 @@ The Northern Illinois Food Bank does compliance checks with local pantries. They
  * Hosting the webservice
  * Ability to save forms as a PDF
  * Ability to edit forms
+ * Forms that need to be broken up (Fb agency has been broken up. The other form that needs to be broken up is the emergency food form.)
  * Create FbAgency button pops up in step 3, need to figure out why
  * Authorization Verification (as it is anyone can signup and submit forms, needs to have some kind of authorization to verify employment)
  * Reports
