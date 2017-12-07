@@ -4,7 +4,7 @@
     * Need to add this to the controller
     ```ruby
     def edit
-        @movie = Movie.find params[:id]
+        @agency = Agency.find params[:id]
     end
     ```
-    
+    * Another suggestion would be creating a edit.html.haml file, that will show the information from the database, along with the ability to save the new information
