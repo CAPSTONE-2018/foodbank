@@ -16,7 +16,7 @@
         %tr
             %td= agency.AgencyName
             %td= agency.DateOfVerification
-            %td= link_to "Edit", new_fb_agency_path
+            %td= link_to "Edit", edit_fb_agency_path(agency)
             %td= link_to 'Delete', fb_agency_path(agency), :method => :delete
 
             
