@@ -1,0 +1,11 @@
+PDF conversion will help make it easier to view and print form. 
+We want a form to open as a PDF and have all of its pages, so it can be printed all at once
+First you can get the View(HTML/CSS) to get converted. 
+You can also have the PDF save to a specific path on the computer.
+
+Here are some sources that help explain this process using the gem PDFKit
+
+----------            https://github.com/pdfkit/PDFKit
+
+----------            http://railscasts.com/episodes/220-pdfkit
+

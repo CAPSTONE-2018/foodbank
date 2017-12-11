@@ -14,10 +14,6 @@ before_action :load_fbagency
     @fb_agency = @wizard.object
     logger.debug "New agency: #{@fb_agency.attributes.inspect}"
   end
-  
-  def edit
-    @wizard = ModelWizard.new(@fb_agencies, session, params).start
-  end
 
   def create
     @wizard = ModelWizard.new(FbAgency, session, params, agencies_params).continue
@@ -29,38 +25,27 @@ before_action :load_fbagency
     else
       render :new
     end
-  end
-
-  def update
-    @wizard = ModelWizard.new(@fb_agencies, session, params, agencies_params).continue
-    if @wizard.save
-      redirect_to @fb_agencies, notice: 'updated.'
-    else
-      render :edit
+  end 
+    def edit
+        @fb_agency = FbAgency.find(params[:id])
     end
-  end
-
-  def destroy
-    @fb_agencies.destroy
-    redirect_to fb_agencies_url
-  end
-
-private
-
-  def load_fbagency
-    @fb_agencies = FbAgency.find_by(id: params[:id])
-  end
-
-  def agencies_params
-    return params unless params[:fb_agency]
-
-    params.require(:fb_agency).permit(:current_step,
-      :AgencyName, :AgencyCounty, :AgencyNumber, :TodaysDate, :DofLastMonitor, :ParentAgency,
+    def update
+        @fb_agency = FbAgency.find params[:id]
+        @fb_agency.update_attributes!(agencies_params)
+        flash[:notice] = "#{@fb_agency.AgencyName} was successfully updated."
+        redirect_to fb_agencies_path
+    end
+    def destroy
+        @fb_agency = FbAgency.find(params[:id])
+        @fb_agency.destroy
+        flash[:notice] = "Agency '#{@fb_agency.AgencyName}' deleted."
+        redirect_to fb_agencies_path
+    end
+    
+    def agencies_params
+        params.require(:fb_agency).permit(:AgencyName, :AgencyCounty, :AgencyNumber, :TodaysDate, :DofLastMonitor, :ParentAgency,
         :PAgencyNum, :SiteAddress, :SiteNumber, :ContactName, :ContactNum, :Director, :DirectorNum, :AdditionalContact, :AdditionalNum, 
-        :PrimaryEmail, :DateMostRecentTraining, :TaxExemptOnFile, :IRSVerification, :DateOfVerification, :EEP,
-        :DateOfContract, :SoupKitchen, :GroupHome, :Shelter, :Daycare, :YouthProgram, :FoodPantry, :Seasonal, :MobilePantry, :Backpack, :PersonInterviewed, :DaysOfOperation, :SingleAudit, :HandicapAccessible => [:id, :name]
-    )
-  end
-
+        :PrimaryEmail, :DateMostRecentTraining, :TaxExemptOnFile, :IRSVerification, :DateOfVerification, :EEP, :DateOfContract,
+        :SoupKitchen, :GroupHome, :Shelter, :Daycare, :YouthProgram, :FoodPantry, :Seasonal, :MobilePantry, :Backpack, :PersonInterviewed, :DaysOfOperation, :SingleAudit, :HandicapAccessible)
+    end
 end
-

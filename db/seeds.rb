@@ -6,3 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+FbAgency.create!(:AgencyName => 'Northern Illinois', :DateOfVerification => '20-August-2017')
+FbAgency.create!(:AgencyName => 'Northern Illinois2', :DateOfVerification => '20-August-2017')
+FbAgency.create!(:AgencyName => 'Northern Illinois3', :DateOfVerification => '20-August-2017')

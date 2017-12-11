@@ -1,4 +1,23 @@
-<h1>Foodbank Agencies</h1>
+%h1 Agencies
 
-= link_to 'New Agencies (with steps)', new_fb_agency_path 
+%table#forms
+    %thead 
+    %tr
+        %th Agency Name
+        %th Completion Date
+        = link_to "How-To", "howto/howto"
+        %br
+        = link_to 'Add New Agency (with steps)', new_fb_agency_path 
+        %th Edit Agency
+        %th Delete Agency
 
+    %tbody
+    - @fb_agencies.each do |agency|
+        %tr
+            %td= agency.AgencyName
+            %td= agency.DateOfVerification
+            %td= link_to "Edit", edit_fb_agency_path(agency)
+            %td= link_to 'Delete', fb_agency_path(agency), :method => :delete
+
+            
+        

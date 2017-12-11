@@ -6,6 +6,8 @@ class FbAgency < ActiveRecord::Base
         3
     end
     validates :AgencyName, presence: true, if: :step1?
+    validates :DateOfVerification, presence: true, if: :step2?
+    
     validates :AgencyCounty, presence: true, if: :step1?
     validates :AgencyNumber, numericality: true, if: :step1?
     validates :TodaysDate, presence: true, if: :step1?
@@ -24,7 +26,6 @@ class FbAgency < ActiveRecord::Base
     validates :DateMostRecentTraining, presence: true, if: :step2?
     validates :TaxExemptOnFile, :presence => true, :inclusion => { :in => %w(Yes No), :allow_blank => false }, if: :step2?
     validates :IRSVerification, :presence => true, :inclusion => { :in => %w(Yes No), :allow_blank => false }, if: :step2?
-    validates :DateOfVerification, presence: true, if: :step2?
     validates :EEP, :presence => true, if: :step2?
     validates :DateOfContract, presence: true, if: :step3?
     validates :SoupKitchen, presence: true, :allow_blank => true, if: :step3?
@@ -40,4 +41,5 @@ class FbAgency < ActiveRecord::Base
     validates :DaysOfOperation, presence: true, if: :step3?
     validates :SingleAudit, presence: true, if: :step3?
     validates :HandicapAccessible, :presence => true, :allow_blank => true, if: :step3?
+   
 end
