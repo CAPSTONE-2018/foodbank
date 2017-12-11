@@ -1,0 +1,10 @@
+- if @ef_program.errors.any?
+  #errors
+    %ul
+      - @ef_program.errors.full_messages.each do |msg|
+        %li= msg
+= form_for @ef_program do |f|
+  - if params[:all].nil?
+    = render 'ef_programs/steps/current_step', f: f
+  - else
+    = render 'ef_programs/steps/all_steps', f

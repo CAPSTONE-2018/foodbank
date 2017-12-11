@@ -1,0 +1,4 @@
+= hidden_field_tag :all, 1
+- EfProgram.total_steps.times do |step|
+  = render "ef_programs/steps/page#{step + 1}", f: f
+= f.submit

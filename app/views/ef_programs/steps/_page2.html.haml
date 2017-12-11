@@ -1,0 +1,67 @@
+.form-group    
+  .row
+    .header-underline
+      %h4{:style => "margin-top:5em"} Program Procedures
+  .row.yes-no-quest
+    %p.pull-left.col-sm-6
+      = label :ef_program, :RequireClientDocuments, 'Does the program require any documents from clients?'
+    .col-xs-2.pull-left.col-sm-2.lm
+      %label.radio-inline Yes
+      = text_field :ef_program, :RequireClientDocuments, :type => "radio", :value => "Yes"
+      %label.radio-inline No
+      = text_field :ef_program, :RequireClientDocuments, :type => "radio", :value => "No"
+      %p
+  .row
+    %p.pull-left.lm
+      %b
+      %small (Programs are prohibited from asking for social security cards, pay stubs and income data)
+  .row
+    .col-xs-2.pull-left.col-sm-6.lm
+      = label :ef_program, :DocumentsRequested, 'Describe the types of documentation requested.'
+    .col-xs-2.pull-left.col-sm-2.lm
+      = text_field :ef_program, :DocumentsRequested
+  .row
+    .col-xs-2.pull-left.col-sm-6.lm
+      = label :ef_program, :PurposeForRequestingDocumentation, 'Describe the purpose for requesting documentation.'
+    .col-xs-2.pull-left.col-sm-2.lm
+      = text_field :ef_program, :PurposeForRequestingDocumentation
+  .row.yes-no-quest
+    %p.pull-left.col-sm-8
+      = label :ef_program, :ReceiveFoodOnceEvery30days, 'Does the program allow households to receive food at least once every 30 days?'
+    .col-xs-2.pull-left.col-sm-2.lm
+      %label.radio-inline Yes
+      = text_field :ef_program, :ReceiveFoodOnceEvery30days, :type => "radio", :value => "Yes"
+      %label.radio-inline No
+      = text_field :ef_program, :ReceiveFoodOnceEvery30days, :type => "radio", :value => "No"
+      %p
+  .row.yes-no-quest
+    %p.pull-left.col-sm-8
+      = label :ef_program, :RequiredToObtainReferral, 'Are clients required to obtain referral from an outside agency in order to receive food?'
+    .col-xs-2.pull-left.col-sm-2.lm
+      %label.radio-inline Yes
+      = text_field :ef_program, :RequiredToObtainReferral, :type => "radio", :value => "Yes"
+      %label.radio-inline No
+      = text_field :ef_program, :RequiredToObtainReferral, :type => "radio", :value => "No"
+      %p
+  / EFP GROCERY PROGRAMS SECTION
+  .row
+    .header-underline
+      %h4{:style => "margin-top:5em"} EFP Grocery Programs
+  .row.yes-no-quest
+    %p.pull-left.col-sm-8
+      = label :ef_program, :OtherFoodsWithGovernemntCommodities, 'Does the pantry have other foods to distribute with government commodities?'
+    .col-xs-2.pull-left.col-sm-2.lm
+      %label.radio-inline Yes
+      = text_field :ef_program, :OtherFoodsWithGovernemntCommodities, :type => "radio", :value => "Yes"
+      %label.radio-inline No
+      = text_field :ef_program, :OtherFoodsWithGovernemntCommodities, :type => "radio", :value => "No"
+      %p
+  .row.yes-no-quest
+    %p.pull-left.col-sm-8
+      = label :ef_program, :PostersVisible, 'Are the "And Just For All", "Income Eligibility","Notice to Program Participants", and "Prohibited Activities" posters visible to the clients?'
+    .col-xs-2.pull-left.col-sm-2.lm
+      %label.radio-inline Yes
+      = text_field :ef_program, :PostersVisible, :type => "radio", :value => "Yes"
+      %label.radio-inline No
+      = text_field :ef_program, :PostersVisible, :type => "radio", :value => "No"
+      %p

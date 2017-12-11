@@ -1,0 +1,112 @@
+.form-group
+  .row
+    .col-xs-2.pull-right.col-sm-1.rm
+      %label{:for => "agency_num"} Agency #
+      %input#agency_num.form-control{:disabled => "disabled", :type => "text"}/
+    .row
+      .text-center
+        %h3 Part V: Emergency Food Program (EFP) Information
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :DiscriminationComplaints, 'Have there been any discrimination complaints at the program in the past year?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :DiscriminationComplaints, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :DiscriminationComplaints, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :ComplaintsForwarded, 'If yes have the complaints been forwarded to the food bank?'
+          .col-xs-2.pull-left.col-sm-3.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :ComplaintsForwarded, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :ComplaintsForwarded, :type => "radio", :value => "No"
+            %label.radio-inline N/A
+            = text_field :ef_program, :ComplaintsForwarded, :type => "radio", :value => "NA"
+            %p
+        .row
+          %p.pull-left.col-sm-6
+            = label :ef_program, :NumOfCasesInInventory, 'Total cases of EFP/TANF product current in inventory:'
+            %small (Must be counted during visit)
+          .col-xs-1.pull-left
+            = text_field :ef_program, :NumOfCasesInInventory
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :OperateOtherProgram, 'Does the partner also operate another program?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :OperateOtherProgram, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :OperateOtherProgram, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :FoodSeperated, 'If yes, is the food seperated and tracked for the two programs?'
+          .col-xs-2.pull-left.col-sm-3.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :FoodSeperated, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :FoodSeperated, :type => "radio", :value => "No"
+            %label.radio-inline N/A
+            = text_field :ef_program, :FoodSeperated, :type => "radio", :value => "NA"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :EFPSiteManual,  'Does the program have the EFP Site Manual on-site?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :EFPSiteManual, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :EFPSiteManual , :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :OperationHoursPosted, 'Are visible signs posted appropriately announcing the days and hours of operation?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :OperationHoursPosted, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :OperationHoursPosted, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :JusticePosterVisible,  'Is the "And Justice For All" poster visible to the clients?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :JusticePosterVisible, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :JusticePosterVisible, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :ReligiousOrganization, 'Is this a religious organization?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :ReligiousOrganization, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :ReligiousOrganization, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :BeneficiaryRightsVisible, 'Is the Written Notice of Beneficiary Rights Poster visible to the clients?'
+          .col-xs-2.pull-left.col-sm-3.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :BeneficiaryRightsVisible, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :BeneficiaryRightsVisible, :type => "radio", :value => "No"
+            %label.radio-inline N/A
+            = text_field :ef_program, :BeneficiaryRightsVisible, :type => "radio", :value => "NA"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-6
+            = label :ef_program, :NonReligiousReferral, 'Are clients offerd a referral to a non-religious EFP feeding program?'
+          .col-xs-2.pull-left.col-sm-3.lm
+            %label.radio-inline Yes
+            =  text_field :ef_program, :NonReligiousReferral, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            =  text_field :ef_program, :NonReligiousReferral, :type => "radio", :value => "No"
+            %label.radio-inline N/A
+            = text_field :ef_program, :NonReligiousReferral, :type => "radio", :value => "NA"
+            %p

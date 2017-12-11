@@ -2,7 +2,7 @@ Foodbank:: Application.routes.draw do
     root 'sessions#new'
     #resources :forms, :fb_agencies, :validate_step_fb_agencies, :meal_programs, :grocery_plans, :food_safeties, :direct_connect_programs,
     #:ef_programs, :program_procedures, :signature_documents, :proxy_forms, :part_six_forms, :part_seven_eight_forms,
-    resources :fb_agencies, :grocery_plans, :forms
+    resources :fb_agencies, :grocery_plans, :food_safeties, :meal_programs, :ef_programs, :direct_connect_programs, :part_six_forms, :part_seven_eight_forms, :forms
 
  
 
@@ -35,7 +35,7 @@ Foodbank:: Application.routes.draw do
     get '/forms/mealplan'
     get '/forms/groceryplan'
     get '/forms/directconnect'
-    get '/forms/emergencyfood'
+    #get '/forms/emergencyfood'
     get '/forms/part6'
     get '/forms/part7_8'
     get 'option_select/options'

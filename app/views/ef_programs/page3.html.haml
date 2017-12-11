@@ -1,0 +1,114 @@
+%body
+  #wrapper
+    = form_tag ef_programs_url :method => :post do
+/ Signature Documents SECTION
+      .form-group     
+        .row
+          .header-underline
+          %h4{:style => "margin-top:5em"} Signature Documents
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :DHS_TANFSignaturesDocumentsUsed,  'Are DHS/TANF signature documents used?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :DHS_TANFSignaturesDocumentsUsed, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :DHS_TANFSignaturesDocumentsUsed, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :SignatureSheetsForCorrectYears, 'Are signature sheets for the correct year?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :SignatureSheetsForCorrectYears, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :SignatureSheetsForCorrectYears, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :FoodBankNameOnSheet, 'Is the food bank name on the signature sheet?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :FoodBankNameOnSheet, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            =text_field :ef_program, :FoodBankNameOnSheet, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :DateOnSignatureSheet,  'Is the date on the signature sheet?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :DateOnSignatureSheet, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :DateOnSignatureSheet, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :ReciptientSignTheirName, 'Does the recipient sign his/her name on the signature sheet?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :ReciptientSignTheirName, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :ReciptientSignTheirName, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :ClientAddressRecorded, "Is the client's address recorded on signature sheet?"
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :ClientAddressRecorded, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :ClientAddressRecorded, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :HouseholdSizeRecorded, 'Is the household size recorded on signature sheet?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :HouseholdSizeRecorded, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :HouseholdSizeRecorded, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :NumOfChildren18andUnderRecorded,  'Are the number of children that 18 years or younger recorded in the TANF box?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :NumOfChildren18andUnderRecorded, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :NumOfChildren18andUnderRecorded, :type => "radio", :value => "No"
+            %p
+        / Proxy Documents SECTION
+      .form-group     
+        .row
+          .header-underline-dotted
+            %h4{:style => "margin-top:5em"} Complete the following questions if proxy forms are used
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :CorrectYear, 'Are proxy forms for the correct year?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :CorrectYear, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :CorrectYear, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :OriginalSignature, 'Does the proxy form contain the original signature of recipient?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :OriginalSignature, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :OriginalSignature, :type => "radio", :value => "No"
+            %p
+        .row.yes-no-quest
+          %p.pull-left.col-sm-8
+            = label :ef_program, :SignInPresenceOfPantryPersonnel, 'Does the designated proxy sign the proxy form in the presence of pantry personnel?'
+          .col-xs-2.pull-left.col-sm-2.lm
+            %label.radio-inline Yes
+            = text_field :ef_program, :SignInPresenceOfPantryPersonnel, :type => "radio", :value => "Yes"
+            %label.radio-inline No
+            = text_field :ef_program, :SignInPresenceOfPantryPersonnel, :type => "radio", :vale => "No"
+            %p
+        .row.pull-right.rm
+          = submit_tag 'Next'

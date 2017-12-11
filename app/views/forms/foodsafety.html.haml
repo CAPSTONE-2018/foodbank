@@ -3,13 +3,13 @@
   #wrapper
     = form_tag food_safeties_url :method => :post do
       .form-group
-      .row
-        .col-xs-2.pull-right.col-sm-1.rm
-          %label{:for => "agency_num"} Agency #
-          %input#agency_num.form-control{:disabled => "disabled", :type => "text"}/
-      .row
-        .text-center
-          %h3 Part III: Food Safety, Storage and Inventory (ALL PROGRAMS)
+        .row
+          .col-xs-2.pull-right.col-sm-1.rm
+            %label{:for => "agency_num"} Agency #
+            %input#agency_num.form-control{:disabled => "disabled", :type => "text"}/
+        .row
+          .text-center
+            %h3 Part III: Food Safety, Storage and Inventory (ALL PROGRAMS)
           .row.yes-no-quest
             .col-xs-2.pull-left.col-sm-4.lm
               = label :food_safety, :RequireAPermit, 'Does the Local Health Department require a permit?'            

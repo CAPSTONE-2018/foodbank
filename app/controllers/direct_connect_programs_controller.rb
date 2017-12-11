@@ -5,7 +5,8 @@ class DirectConnectProgramsController < ApplicationController
   
     def create
         @direct_connect_program = DirectConnectProgram.create!(agencies_params)
-        render '/forms/emergencyfood'
+        #render '/forms/emergencyfood'
+        redirect_to new_ef_program_path
     end 
     
 end
