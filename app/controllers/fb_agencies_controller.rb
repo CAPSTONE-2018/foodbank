@@ -27,7 +27,7 @@ class FbAgenciesController < ApplicationController
     end
   end 
     def edit
-      @wizard = ModelWizard.new(@fb_agencies, session, params).start
+      #@wizard = ModelWizard.new(@fb_agencies, session, params).start
       @fb_agency = FbAgency.find(params[:id])
     end
     def update
