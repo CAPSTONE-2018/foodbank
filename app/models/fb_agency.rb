@@ -7,7 +7,6 @@ class FbAgency < ActiveRecord::Base
     end
     validates :AgencyName, presence: true, if: :step1?
     validates :DateOfVerification, presence: true, if: :step2?
-    
     validates :AgencyCounty, presence: true, if: :step1?
     validates :AgencyNumber, numericality: true, if: :step1?
     validates :TodaysDate, presence: true, if: :step1?

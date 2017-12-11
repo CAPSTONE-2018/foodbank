@@ -7,7 +7,7 @@ class PartSevenEightFormsController < ApplicationController
     def create
         @part_seven_eight_form = PartSevenEightForm.create!(agencies_params)
         flash[:notice] = "Form was successfully submitted."
-        redirect_to forms_path
+        redirect_to fb_agencies_path
 
     end 
     

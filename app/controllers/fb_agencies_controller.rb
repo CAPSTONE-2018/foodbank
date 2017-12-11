@@ -1,5 +1,5 @@
 class FbAgenciesController < ApplicationController
-before_action :load_fbagency
+#before_action :load_fbagency
 
 
   def index
@@ -27,13 +27,15 @@ before_action :load_fbagency
     end
   end 
     def edit
-        @fb_agency = FbAgency.find(params[:id])
+      @wizard = ModelWizard.new(@fb_agencies, session, params).start
+      @fb_agency = FbAgency.find(params[:id])
     end
     def update
-        @fb_agency = FbAgency.find params[:id]
-        @fb_agency.update_attributes!(agencies_params)
-        flash[:notice] = "#{@fb_agency.AgencyName} was successfully updated."
-        redirect_to fb_agencies_path
+      @wizard = ModelWizard.new(@fb_agencies, session, params, agencies_params).continue
+      @fb_agency = FbAgency.find params[:id]
+      @fb_agency.update_attributes!(agencies_params)
+      flash[:notice] = "#{@fb_agency.AgencyName} was successfully updated."
+      redirect_to fb_agencies_path
     end
     def destroy
         @fb_agency = FbAgency.find(params[:id])
@@ -43,7 +45,7 @@ before_action :load_fbagency
     end
     
     def agencies_params
-        params.require(:fb_agency).permit(:AgencyName, :AgencyCounty, :AgencyNumber, :TodaysDate, :DofLastMonitor, :ParentAgency,
+        params.require(:fb_agency).permit(:current_step, :AgencyName, :AgencyCounty, :AgencyNumber, :TodaysDate, :DofLastMonitor, :ParentAgency,
         :PAgencyNum, :SiteAddress, :SiteNumber, :ContactName, :ContactNum, :Director, :DirectorNum, :AdditionalContact, :AdditionalNum, 
         :PrimaryEmail, :DateMostRecentTraining, :TaxExemptOnFile, :IRSVerification, :DateOfVerification, :EEP, :DateOfContract,
         :SoupKitchen, :GroupHome, :Shelter, :Daycare, :YouthProgram, :FoodPantry, :Seasonal, :MobilePantry, :Backpack, :PersonInterviewed, :DaysOfOperation, :SingleAudit, :HandicapAccessible)
