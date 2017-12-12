@@ -19,8 +19,8 @@ gem install rails
 1. Clone this Git repository: `git clone https://github.com/Capstone-Fall-2017/foodbank.git`
 1. Move to the foodbank directory that was created when you cloned the repository:  `cd foodbank`
 1. Install the app's dependencies: `bundle install`
-1. Start the server:  `sudo service postgresql start`
 3. Run database schema:  `rake db:schema:load`
+1. Start the server:  `sudo service postgresql start`
 1. Launch the rails application: `rails server -p $PORT -b $IP`
 1. Click on the URL appears in the Cloud9 helper.
 1.  The new window will show an error.  Add `/login` to the end of the URL.  You should now see the login screen.
