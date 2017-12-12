@@ -78,6 +78,7 @@ gem install rails
 
 - Re-run your migration and seed files using `rake db:migrate` and `rake db:seed`
 - Test your app using the local server to be sure that it still works correctly
+- Keep in mind, runnning migrations will destroy the schema. So you have to run 'rake db:schema:load' after.
 
 ## Deploy with Heroku
 
