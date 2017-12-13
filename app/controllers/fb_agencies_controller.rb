@@ -31,7 +31,7 @@ class FbAgenciesController < ApplicationController
       @fb_agency = FbAgency.find(params[:id])
     end
     def update
-      @wizard = ModelWizard.new(@fb_agencies, session, params, agencies_params).continue
+      #@wizard = ModelWizard.new(@fb_agencies, session, params, agencies_params).continue
       @fb_agency = FbAgency.find params[:id]
       @fb_agency.update_attributes!(agencies_params)
       flash[:notice] = "#{@fb_agency.AgencyName} was successfully updated."
