@@ -117,7 +117,7 @@ gem install rails
 
 - Migrate your data
 ```
-    heroku run rake db:migrate
+    heroku run rake db:schema:load
     heroku run rake db:seed
 ```
 - Visit your application
