@@ -18,6 +18,12 @@
             %td= agency.DateOfVerification
             %td= link_to "Edit", edit_fb_agency_path(agency)
             %td= link_to 'Delete', fb_agency_path(agency), :method => :delete
+            
+%h1 Import:
+                   -# fb_agencies_path may need to be replaced with proper path
+    = form_tag import fb_agencies_path, multipart: true do
+    = submit_tag 'Import'
+    = file_field_tag :file
 
             
         

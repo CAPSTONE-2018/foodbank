@@ -4,6 +4,24 @@ class FbAgenciesController < ApplicationController
 
   def index
     @fb_agencies = FbAgency.all
+    respond_to do |format|
+        format.html
+        format.csv {render text: @agencies.to_csv, nil:ignore}
+        format.xls { send_data @agencies.to_csv(col_sep: "\t") }
+    end
+  end
+  
+  def import
+        if params[:file].nil?
+            flash[:warning] = "Please Select a File"
+                     -# fb_agencies_path may need to be replaced with proper path
+            redirect_to fb_agencies_path notice: "Not Imported."
+        else
+            Agency.import(params[:file])
+            flash[:notice] = "Data imported"
+                     -# fb_agencies_path may need to be replaced with proper path
+            redirect_to fb_agencies_path notice: "Data Imported."
+        end
   end
 
   def show
